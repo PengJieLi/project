@@ -1,0 +1,689 @@
+@charset "utf-8";
+html,body,dd,dl,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,ol,p,select,td,textarea,th,ul,li{margin:0;padding:0;font-size: 12px;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{font-family:"微软雅黑";}
+ul,ol,li{list-style:none;}
+a,u{text-decoration: none;}
+i,em{font-style:normal;}
+b,strong{font-weight:100;}
+img{display:block;border:0;}
+.clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility: hidden;}
+.clearfix{zoom:1;}
+input{
+    outline: none;
+}
+.public{
+    width: 1180px;
+    margin: 0 auto;
+}
+a:hover{
+    color: #DB3962;
+}
+a{
+    color: #222;
+}
+/*top*/
+#top{
+    @extend .public;
+    background: #f3f3f3;
+    height: 38px;
+    line-height: 38px;
+    span{
+        font-size: 12px; 
+    }
+    .user{
+        background: url(../images/icon.png) no-repeat 0 -20px;
+        padding-left: 19px;
+        margin: 0 10px;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+        .user{
+            margin-right: 25px;
+        }
+        .count{
+            color:#DB3962 ;
+        }
+        .cart{
+            margin-right: 10px;
+        }
+        .certify{
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 17px;
+            background: url(../images/icon.png) no-repeat 0 -40px;
+        }
+        .yuyue{
+            margin-right:10px;
+            padding-left: 17px;
+            background: url(../images/icon.png) no-repeat 0 -40px;
+        }
+        .mobile{
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 22px;
+            background: url(../images/icon.png) no-repeat 0 -64px;
+            
+        }
+        .weixin{
+           margin: 0 10px;
+           padding-left: 25px;
+           background: url(../images/icon.png) no-repeat 0 -96px;
+            
+        }
+        .weibo{
+            margin:  0 10px;
+            padding-left: 26px;
+            background: url(../images/icon.png) no-repeat 0 -129px;
+        }
+    }
+}
+/*header*/
+#header{
+    @extend .public;
+    height:100px;
+    h1{
+        float: left;
+    }
+    .main{
+        float: left;
+        width: 550px;
+        height: 90px;
+        margin-left: 150px;
+        .search{
+            width: 265px;
+            height: 32px;
+            margin-top: 18px;
+            margin-left: 150px;
+            .submit{
+                width: 63px;
+                height: 32px;
+                float: right;
+                background: #6d6c6c;
+                text-align: center;
+                line-height: 32px;
+                color: #FFFFFF;
+                font-weight: 900;
+            }
+            .keycode{
+                width: 200px;
+                height: 30px;
+                border:1px solid #6d6c6c;
+                float: left;
+                color: #7d7d7d;
+            }
+        }
+        .hotkey{
+            margin-left: 150px;
+            margin-top: 12px;
+            a{
+                margin-right: 10px;
+                color: #7d7d7d;
+            }
+            a:hover{
+                color: #DB3962;
+            }
+        }
+    }
+    .code{
+        width: 240px;
+        height: 90px;
+        float: right;
+    }
+}
+
+/*menu*/
+#menu{
+    @extend .public;
+    height: 38px;
+    line-height: 38px;
+    .allmenu{
+        width: 182px;
+        height: 38px;
+        background: #c11e20 url(../images/icon1.png) no-repeat 160px 0;
+        float: left;
+        padding-left: 18px;
+        li{
+            float: left;
+            color: #FFFFFF;
+            font-weight: 900;
+            .submenu{
+                display: none;
+                li{
+                    float: left;
+                }
+            }
+        }
+    }
+    .home{
+        float: left;
+        padding: 0 25px;
+        a{
+            font-weight: 900;
+        }
+    }
+    .item{
+        float: left;
+        padding: 0 25px;
+        a{
+            font-weight: 900;
+        }
+    }
+    .phone{
+        float: right;
+        width: 240px;
+        height: 38px;
+    }
+}
+/*banner*/
+#banner{
+    height: 420px;
+    ul{
+        position: relative;
+        height: 420px;
+        li{
+            width: 100%;
+            height: 420px;
+            position: absolute;
+            background: url(../images/1.jpg) 50% 0px no-repeat;
+            a{
+                width: 100%;
+                height: 420px;
+            }
+        }
+     
+    }
+    
+    
+}
+/*homaline*/
+.homeline1{
+    @extend .public;
+    height: 210px;
+    padding-top:18px ;
+    div{
+        float: left;
+        border: 1px solid #ccc;
+        padding-top: 7px;
+        text-align: center;
+        height: 200px;
+        a{
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+    }
+    .center{
+        margin: 0 14px;
+    }
+}
+.homeline{
+    height: 18px;
+    @extend .public;
+    background:url(../images/line.jpg) no-repeat ;
+}
+.homeline2{
+    @extend .public;
+    height: 159px;
+    border: 1px solid #ccc;
+   .leftimg{
+       width: 616px;
+       height: 159px;
+       float: left;
+       background-color:#f9f9f9;
+       img{
+           margin-top: 20px;
+           margin-left: 15px;
+           background-color:#f9f9f9;
+       }
+   }
+   .rightbtn{
+       width: 562px;
+       height: 159px;
+       float: left;
+       background: url(../images/bg1.png);
+       .inputvalue{
+           margin-top: 20px;
+           float: left;
+           width: 215px;
+           height: 33px;
+           .inputcss{
+               width: 50px;
+               height: 33px;
+               float: left;
+               margin-left: 70px;
+               margin-top: 5px;
+           }
+           .searchinputcss{
+               width: 40px;
+               height: 15px;
+           }
+           .inputline{
+               width: 20px;
+               height: 33px;
+               float: left;
+               line-height: 30px;
+           }
+           .inputtxt{
+               height: 33px;
+               line-height: 30px;
+              
+           }
+           .rightinputcss{
+               float:left;
+               width:50px;
+               height:33px;
+               margin-top:5px;
+           }
+       }
+       .selectitem{
+           float: left;
+           margin-left: 70px; 
+           margin-top: 13px;
+           height:33px;
+           .imgs {
+               cursor:pointer; 
+               float: left; 
+               padding: 0 3px; 
+               height: 24px;
+               img{
+                   margin-top: 3px;
+               }
+            }
+            
+       }
+       .selectitembtn { 
+           float: left; 
+           margin-left: 370px; 
+           margin-top: 5px;
+           height:33px;
+           .imgs{
+               cursor:pointer;
+           }
+       }
+       
+   }
+}
+.homeline3{
+   margin: 0 auto; 
+   width: 1180px; 
+   height: 429px; 
+   background: #FFFFFF; 
+   overflow: hidden; 
+    .left{
+        float: left; 
+        width: 321px; 
+        height: 429px; 
+        background: url(../images/line3/1.jpg) no-repeat; 
+        overflow: hidden;
+        
+    }
+    .center{
+        float: left; 
+        width: 259px; 
+        height: 429px; 
+        overflow: hidden;
+    }
+    .right{
+        float: left; 
+        width: 600px; 
+        height: 429px; 
+        overflow: hidden;
+    }
+    .righttop{
+        float: left; 
+        width: 600px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .righttopleft{
+        float: left; 
+        width: 299px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .righttopright{
+        float: left; 
+        width: 301px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .rightbottom{
+        float: left; 
+        width: 600px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+    .rightbottomleft{
+        float: left; 
+        width: 200px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+    .rightbottomcenter{
+        float: left; 
+        width: 195px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+    .rightbottomright{
+        float: left; 
+        width: 205px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+
+}
+.homeline4{
+    margin: 0 auto; 
+    width: 1180px; 
+    height: 116px; 
+    background: #FFFFFF; 
+    overflow: hidden;
+    div{
+        float: left;
+    }
+}
+.homeline5{
+    margin: 0 auto; 
+    width: 1180px; 
+    height: 429px; 
+    background: #FFFFFF; 
+    overflow: hidden;
+    .left{
+        float: left; 
+        width: 320px; 
+        height: 429px; 
+        background: url(../images/line5/1.jpg) no-repeat; 
+        overflow: hidden;
+    }
+    .center{
+        float: left; 
+        width: 598px; 
+        height: 429px; 
+        overflow: hidden;
+    }
+    .right{
+        float: left; 
+        width: 262px; 
+        height: 429px; 
+        overflow: hidden;
+    }
+    .centertop{
+        float: left; 
+        width: 598px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .centertopleft{
+        float: left; 
+        width: 301px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .centertopright{
+        float: left; 
+        width: 297px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .centerbottom{
+        float: left; 
+        width: 598px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+    .centerbottomleft{
+        float: left; 
+        width: 202px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+    .centerbottomcenter{
+        float: left; 
+        width: 195px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+    .centerbottomright{
+        float: left; 
+        width: 201px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+}
+.homeline6{
+    margin: 0 auto; 
+    width: 1180px; 
+    height: 429px; 
+    background: #FFFFFF; 
+    overflow: hidden;
+    .left{
+        float: left; 
+        width: 321px; 
+        height: 429px; 
+        background: url(../images/line6/1.jpg); 
+        overflow: hidden;
+    }
+    .center{
+        float: left; 
+        width: 259px; 
+        height: 429px; 
+        overflow: hidden;
+    }
+    .right{
+        float: left; 
+        width: 600px; 
+        height: 429px; 
+        overflow: hidden;
+    }
+    .righttop{
+        float: left; 
+        width: 600px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .righttopleft{
+        float: left; 
+        width: 301px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .righttopright{
+        float: left; 
+        width: 299px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .rightbottom{
+        float: left; 
+        width: 600px; 
+        height: 218px; 
+        overflow: hidden; 
+    }
+    .rightbottomleft{
+        float: left; 
+        width: 200px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+    .rightbottomcenter{
+        float: left; 
+        width: 197px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+    .rightbottomright{
+        float: left; 
+        width: 203px; 
+        height: 218px; 
+        overflow: hidden;
+    }
+}
+.homeline7 {  
+    margin: 0 auto; 
+    width: 1180px; 
+    height: 116px; 
+    background: #FFFFFF; 
+    overflow: hidden; 
+}
+.homeline8{
+    @extend .public;
+    height: 429px; 
+    background: #FFFFFF; 
+    overflow: hidden;
+    .left{
+        float: left; 
+        width: 320px; 
+        height: 429px; 
+        background: url(../images/line8/1.jpg) no-repeat; 
+        overflow: hidden;
+    }
+    .center{
+        float: left; 
+        width: 598px; 
+        height: 429px; 
+        overflow: hidden;
+    }
+    .right{
+        float: left; 
+        width: 262px; 
+        height: 429px; 
+        overflow: hidden;
+    }
+    .centertop{
+        float: left; 
+        width: 598px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .centertopleft{
+        float: left; 
+        width: 300px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .centertopright{
+        float: left; 
+        width: 298px; 
+        height: 211px; 
+        overflow: hidden;
+    }
+    .centerbottom{
+    float: left; width: 598px; height: 218px; overflow: hidden;}
+    .centerbottomleft{float: left; width: 200px; height: 218px; overflow: hidden; }
+    .centerbottomcenter{float: left; width: 196px; height: 218px; overflow: hidden;}
+    .centerbottomright{float: left; width: 202px; height: 218px; overflow: hidden;}
+}
+.homeline10{
+    @extend .public;
+    height: 429px; background: #FFFFFF; overflow: hidden;
+    .left{
+        float: left; width: 320px; height: 429px; 
+        background: url(../images/line10/1.jpg); overflow: hidden; 
+    }
+    .center{float: left; width: 598px; height: 429px; overflow: hidden;}
+    .right{float: left; width: 262px; height: 429px; overflow: hidden;}
+    .centertop{float: left; width: 598px; height: 211px; overflow: hidden;}
+    .centertopleft{float: left; width: 300px; height: 211px; overflow: hidden;}
+    .centertopright{float: left; width: 298px; height: 211px; overflow: hidden;}
+    .centerbottom{float: left; width: 598px; height: 218px; overflow: hidden;}
+    .centerbottomleft{float: left; width: 201px; height: 218px; overflow: hidden;}
+    .centerbottomcenter{float: left; width: 196px; height: 218px; overflow: hidden;}
+    .centerbottomright{float: left; width: 201px; height: 218px; overflow: hidden;}
+}
+.homeline9{
+    @extend .public;
+    height: 290px; background: #FFFFFF; overflow: hidden;
+    .linewrap{
+        float: left; margin-right: 10px; width: 320px; height: 288px; border: 1px solid #E3E3E3;
+        .wraphead{
+            width: 320px; height: 33px; line-height: 33px; text-indent: 15px; font-weight: bold; background: url(../images/line9/headbg.jpg);
+        }
+        .wrapmain{
+             padding: 5px; width: 310px; height: 245px;
+            .mainimg{ width: 310px; height: 95px;}
+            .maintext{ margin-top: 10px; width: 310px; height: 135px;
+                div{padding-left: 10px; width: 300px; height: 27px; line-height: 27px;}
+            }
+        }
+    }
+    .lineads{float: left;width: 184px; height: 290px;}
+    
+}
+.homeimgs{ 
+    float: left; 
+    width: 320px; 
+    height: 180px; 
+}
+.hometype{ 
+    float: left; 
+    padding: 12px 0 5px 0; 
+    width: 200px; 
+    height: 120px; 
+}
+.hometype div { 
+    float: left; 
+    width: 200px; 
+    height: 24px; 
+    line-height: 24px; 
+    text-indent: 30px;
+}
+.homeprice { 
+    float: left; 
+    width: 200px; 
+    height: 100px;
+}
+.homeprice div { 
+    float: left; 
+    width: 200px; 
+    height: 24px; 
+    line-height: 24px; 
+    text-indent: 30px;
+}
+
+/*message*/
+#message{
+    @extend .public;
+    height: 260px;
+    padding-top: 20px;
+    .messagetop{
+        height: 35px;
+        width: 100%;
+        h3{
+            float: left;
+            width: 385px;
+            padding-left: 15px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 18px;
+            font-weight: 900;
+        }
+        ul{
+            float: left;
+            li{
+                float: left;
+                a{
+                    float: left;
+                    width: 65px;
+                    height: 35px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+    .messagebottom{
+        width: 679px;
+        height: 255px;
+        text-align: center;
+        font-size: 14px;
+        background: url(../images/map.png) no-repeat;
+        border:1px solid #6B6B6B;
+        .local{
+            
+        }
+    }
+}
