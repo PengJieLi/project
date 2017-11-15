@@ -10,7 +10,8 @@ window.onload=function(){
 	//banner
 	var timer=null;
 	var index=0;
-	timer=setInterval(function(){
+	timer=setInterval(autoplay,3000);
+	function autoplay(){
 		$("#banner li").eq(index).fadeIn(1000)
 						.siblings()
 						.fadeOut(1000);
@@ -23,7 +24,25 @@ window.onload=function(){
 		if(index==2){
 			index=0;
 		}
-	},3000);
+	}
+	$("#banner ol li a").click(function(){
+		clearInterval(timer);
+		$(this).addClass("active")
+				.parent()
+				.siblings()
+				.find("a")
+				.removeClass("active");
+		var index=$(this).parent().index();
+		if(index==1){
+			index=0
+		}else{
+			index=1
+		}
+		$("#banner li").eq(index).fadeIn(1000)
+						.siblings()
+						.fadeOut(1000);
+		
+	})
 	//message 选项卡
 	$("#message ul li").mouseenter(function(){
 		var index=$(this).index();
@@ -118,6 +137,9 @@ window.onload=function(){
 		}
 	})
 	//登录检测
+	if(!getCookie("info")){
+		return ;
+	}
 	var hstr=getCookie("info");
 	var arr=JSON.parse(hstr);
 	if(arr.length!=0){

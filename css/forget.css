@@ -1,0 +1,113 @@
+.forget_box {
+  width: 100%;
+  height: 385px;
+  background: #F0DDD9 url(../images/forget.png) no-repeat center center; }
+  .forget_box .forget {
+    height: 385px;
+    width: 1000px;
+    margin: 0 auto; }
+    .forget_box .forget .forget_top {
+      width: 670px;
+      height: 37px;
+      margin-left: 330px;
+      padding-top: 50px; }
+      .forget_box .forget .forget_top .forget_num {
+        width: 340px;
+        height: 35px;
+        background: #fff; }
+        .forget_box .forget .forget_top .forget_num div {
+          height: 35px; }
+          .forget_box .forget .forget_top .forget_num div .phone {
+            float: left;
+            padding-left: 15px;
+            width: 75px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px; }
+          .forget_box .forget .forget_top .forget_num div .iphone {
+            width: 220px;
+            margin-top: 10px;
+            float: left;
+            border: 0;
+            font-size: 14px; }
+      .forget_box .forget .forget_top .forget_message {
+        margin-top: 20px;
+        width: 340px;
+        height: 35px;
+        background: #fff; }
+        .forget_box .forget .forget_top .forget_message div {
+          height: 35px; }
+          .forget_box .forget .forget_top .forget_message div .mess {
+            width: 75px;
+            float: left;
+            padding-left: 15px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px; }
+          .forget_box .forget .forget_top .forget_message div .note {
+            width: 220px;
+            float: left;
+            margin-top: 10px;
+            border: 0;
+            font-size: 14px; }
+      .forget_box .forget .forget_top .reset_pwd {
+        margin-top: 20px;
+        width: 340px;
+        height: 35px;
+        background: #fff; }
+        .forget_box .forget .forget_top .reset_pwd div {
+          height: 35px; }
+          .forget_box .forget .forget_top .reset_pwd div .rz_pwd {
+            width: 75px;
+            float: left;
+            padding-left: 15px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px; }
+          .forget_box .forget .forget_top .reset_pwd div .cpwd {
+            width: 220px;
+            float: left;
+            margin-top: 10px;
+            border: 0;
+            font-size: 14px; }
+      .forget_box .forget .forget_top .affirm_pwd {
+        margin-top: 20px;
+        width: 340px;
+        height: 35px;
+        background: #fff; }
+        .forget_box .forget .forget_top .affirm_pwd div {
+          height: 35px; }
+          .forget_box .forget .forget_top .affirm_pwd div .qr_pwd {
+            width: 75px;
+            float: left;
+            padding-left: 15px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px; }
+          .forget_box .forget .forget_top .affirm_pwd div .qpwd {
+            width: 220px;
+            float: left;
+            margin-top: 10px;
+            border: 0;
+            font-size: 14px; }
+      .forget_box .forget .forget_top .forgetsubmit {
+        margin-top: 20px;
+        width: 338px;
+        height: 34px;
+        line-height: 34px;
+        color: #555;
+        font-size: 16px;
+        font-weight: 900;
+        cursor: pointer;
+        border-radius: 2px;
+        background: #F8B7B3;
+        border: 1px solid #F8BBB7;
+        text-align: center; }
+      .forget_box .forget .forget_top p {
+        width: 340px;
+        height: 20px;
+        line-height: 20px;
+        color: #B10101;
+        text-align: center; }
+
+/*# sourceMappingURL=forget.css.map */

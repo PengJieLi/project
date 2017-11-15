@@ -4,10 +4,10 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/forget.css"/>
 		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../cookie.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/forget.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -120,37 +120,45 @@
 		</div>
 		
 		
-		<!--login-->
-		<div class="login_box">
-			<div class="login">
-				<div class="login_right">
-					<div class="loginname_top">
-						<a href="register.html">免费注册</a>
+
+			
+		<!--forget-->
+		<div class="forget_box">
+			<div class="forget">
+				<div class="forget_top">
+					<div class="forget_num">
+						<div>
+							<div class="phone">手机号码：</div>
+							<input type="text" placeholder="11位数字" class="iphone"/>
+						</div>
+						<p id="i1"></p>
 					</div>
-					<div class="name_input">
-						<input type="text" placeholder="11位数字" class="uname" />
-						<span id="s1"></span>
+					<div class="forget_message">
+						<div>
+							<div class="mess">短信验证：</div>
+							<input type="text" placeholder="6位数字" class="note"/>
+						</div>
+						<p id="i2"></p>
 					</div>
-					<div class="pwd_input">
-						<input type="text" placeholder="6-20位必须包含字母数字" class="pwd" />
-						<span id="s2"></span>
+					<div class="reset_pwd">
+						<div>
+							<div class="rz_pwd">重置密码：</div>
+							<input type="text" placeholder="6-20位必须包含字母和数字" class="cpwd"/>
+						</div>
+						<p id="i3"></p>
 					</div>
-					<div class="autologin">
-						<input type="checkbox" class="cb_login" />
-						<div class="z1">自动登录</div>
-						<div class="forget"><a href="forget.html">忘记密码？</a></div>
+					<div class="affirm_pwd">
+						<div>
+							<div class="qr_pwd">确认密码：</div>
+							<input type="text" placeholder="6-20位必须包含字母和数字" class="qpwd"/>
+						</div>
+						<p id="i4"></p>
 					</div>
-					<div class="login_btn"></div>
-					<div class="three_login">
-						<a href="#"><img src="images/login/Connect_logo_7.png" alt="" class="img1" /></a>
-						<a href="#"><img src="images/login/wb.gif" alt="" /></a>
-						<a href="#"><img src="images/login/zfb.gif" alt="" /></a>
-					</div>
+					<div class="forgetsubmit">下&nbsp;&nbsp;一&nbsp;&nbsp;步</div>
 				</div>
 			</div>
+			
 		</div>
-			
-			
 		<div class="security"></div>
 		<!--footer-->
 		<div class="shouhou_box">

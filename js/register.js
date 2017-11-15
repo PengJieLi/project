@@ -14,6 +14,7 @@ $(function(){
 			$("#s1").html("用户名不合法").css("color","red");
 			flagName=false;
 		}
+		$("#s1,#s2,#s3,#s4,#s5").hide().val("");
 
 	});
 	//验证码
@@ -41,6 +42,7 @@ $(function(){
 			$("#s2").html("验证码不正确").css("color","red");
 			flagCode=false;
 		}
+		$("#s1,#s2,#s3,#s4,#s5").hide().val("");
 		
 	})
 	//密码
@@ -55,6 +57,7 @@ $(function(){
 			$("#s4").html("密码不合法").css("color","red");
 			flagPwd=false;
 		}
+		$("#s1,#s2,#s3,#s4,#s5").hide().val("");
 	})
 	//确认密码
 	var flagRpwd=null;
@@ -66,6 +69,7 @@ $(function(){
 			$("#s5").html("密码不一致").css("color","red");
 			flagRpwd=false;
 		}
+		$("#s1,#s2,#s3,#s4,#s5").hide().val("");
 	})
 	
 	$("#s1,#s2,#s3,#s4,#s5").hide();

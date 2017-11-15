@@ -12,6 +12,7 @@
       width: 100%;
       height: 420px;
       position: absolute;
+      z-index: 2;
       background: url(../images/2.jpg) 50% 0px no-repeat; }
       #banner ul li a {
         display: block;

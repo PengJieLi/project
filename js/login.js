@@ -6,6 +6,9 @@ $(function(){
 	//获取cookie 验证用户名 密码
 	var flagName=null;
 	var flagPwd=null;
+	if(!getCookie("info")){
+		return ;
+	}
 	var str=getCookie("info");
 	var arr=JSON.parse(str);
 	for (let i=0;i<arr.length;i++) {

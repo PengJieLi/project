@@ -1,0 +1,135 @@
+//forget
+
+.forget_box{
+    width: 100%;
+    height: 385px;
+    background:#F0DDD9 url(../images/forget.png) no-repeat center center;
+    .forget{
+        height: 385px;
+        width: 1000px;
+        margin: 0 auto;
+        .forget_top{
+            width: 670px;
+            height: 37px;
+            margin-left: 330px;
+            padding-top: 50px;
+            .forget_num{
+                width: 340px;
+                height: 35px;
+                background: #fff;
+                div{
+                    height: 35px;
+                    .phone{
+                        float: left;
+                        padding-left: 15px;
+                        width: 75px;
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 14px;
+                    }
+                    .iphone{
+                        width: 220px;
+                        margin-top: 10px;
+                        float: left;
+                        border: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .forget_message{
+                margin-top: 20px;
+                width: 340px;
+                height: 35px;
+                background: #fff;
+                div{
+                    height: 35px;
+                    
+                    .mess{
+                        width: 75px;
+                        float: left;
+                        padding-left: 15px;
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 14px;
+                    }
+                    .note{
+                        width: 220px;
+                        float: left;
+                        margin-top: 10px;
+                        border: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .reset_pwd{
+                margin-top: 20px;
+                width: 340px;
+                height: 35px;
+                background: #fff;
+                div{
+                    height: 35px;
+                    .rz_pwd{
+                        width: 75px;
+                        float: left;
+                        padding-left: 15px;
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 14px;
+                    }
+                    .cpwd{
+                        width: 220px;
+                        float: left;
+                        margin-top: 10px;
+                        border: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .affirm_pwd{
+                margin-top: 20px;
+                width: 340px;
+                height: 35px;
+                background: #fff;
+                div{
+                    height: 35px;
+                    .qr_pwd{
+                        width: 75px;
+                        float: left;
+                        padding-left: 15px;
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 14px;
+                    }
+                    .qpwd{
+                        width: 220px;
+                        float: left;
+                        margin-top: 10px;
+                        border: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .forgetsubmit{
+               margin-top: 20px;
+                width: 338px;
+                height: 34px;
+                line-height: 34px;
+                color: #555;
+                font-size: 16px;
+                font-weight: 900;
+                cursor: pointer;
+                border-radius: 2px;
+                background: #F8B7B3;
+                border: 1px solid #F8BBB7;
+                text-align: center;
+            }
+            p{
+                width: 340px;
+                height: 20px;
+                line-height: 20px;
+                color: #B10101;
+                text-align:center ;
+            }
+        }
+    }
+}
