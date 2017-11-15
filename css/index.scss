@@ -23,61 +23,67 @@ a{
     color: #222;
 }
 /*top*/
-#top{
-    @extend .public;
-    background: #f3f3f3;
-    height: 38px;
-    line-height: 38px;
-    span{
-        font-size: 12px; 
-    }
-    .user{
-        background: url(../images/icon.png) no-repeat 0 -20px;
-        padding-left: 19px;
-        margin: 0 10px;
-    }
-    .left{
-        float: left;
-    }
-    .right{
-        float: right;
+.top_box{
+    width: 100%;
+    background:#f3f3f3 ;
+    #top{
+        @extend .public;
+//      background: #f3f3f3;
+        height: 38px;
+        line-height: 38px;
+        span{
+            font-size: 12px; 
+        }
         .user{
-            margin-right: 25px;
+            background: url(../images/icon.png) no-repeat 0 -20px;
+            padding-left: 19px;
+            margin: 0 10px;
         }
-        .count{
-            color:#DB3962 ;
+        .left{
+            float: left;
         }
-        .cart{
-            margin-right: 10px;
-        }
-        .certify{
-            margin-left: 10px;
-            margin-right: 10px;
-            padding-left: 17px;
-            background: url(../images/icon.png) no-repeat 0 -40px;
-        }
-        .yuyue{
-            margin-right:10px;
-            padding-left: 17px;
-            background: url(../images/icon.png) no-repeat 0 -40px;
-        }
-        .mobile{
-            margin-left: 10px;
-            margin-right: 10px;
-            padding-left: 22px;
-            background: url(../images/icon.png) no-repeat 0 -64px;
-            
-        }
-        .weixin{
-           margin: 0 10px;
-           padding-left: 25px;
-           background: url(../images/icon.png) no-repeat 0 -96px;
-            
-        }
-        .weibo{
-            margin:  0 10px;
-            padding-left: 26px;
-            background: url(../images/icon.png) no-repeat 0 -129px;
+        .right{
+            float: right;
+            .user{
+                margin-right: 25px;
+            }
+            .count{
+                color:#DB3962 ;
+                font-weight: 800;
+            }
+            .cart{
+                margin-right: 10px;
+            }
+            .certify{
+                margin-left: 10px;
+                margin-right: 10px;
+                padding-left: 17px;
+                background: url(../images/icon.png) no-repeat 0 -40px;
+            }
+            .yuyue{
+                margin-right:10px;
+                padding-left: 17px;
+                background: url(../images/icon.png) no-repeat 0 -40px;
+                color:#e13a68;
+            }
+            .mobile{
+                margin-left: 10px;
+                margin-right: 10px;
+                padding-left: 22px;
+                background: url(../images/icon.png) no-repeat 0 -64px;
+                
+            }
+            .weixin{
+               margin: 0 10px;
+               padding-left: 25px;
+               background: url(../images/icon.png) no-repeat 0 -96px;
+                
+            }
+            .weibo{
+                margin:  0 10px;
+                padding-left: 26px;
+                background: url(../images/icon.png) no-repeat 0 -129px;
+            }
         }
     }
 }
@@ -85,6 +91,7 @@ a{
 #header{
     @extend .public;
     height:100px;
+    padding: 5px 0;
     h1{
         float: left;
     }
@@ -139,21 +146,71 @@ a{
 #menu{
     @extend .public;
     height: 38px;
-    line-height: 38px;
+//  line-height: 38px;
     .allmenu{
-        width: 182px;
+        width: 200px;
         height: 38px;
         background: #c11e20 url(../images/icon1.png) no-repeat 160px 0;
         float: left;
-        padding-left: 18px;
         li{
+            position: relative;
+            width: 182px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 14px;
+            padding-left: 18px;
             float: left;
             color: #FFFFFF;
             font-weight: 900;
+            z-index: 999;
             .submenu{
+                float: left;
+                padding: 0;
                 display: none;
+                width: 200px;
+                position: absolute;
+                top: 38px;
+                left: 0;
                 li{
-                    float: left;
+                  width: 190px;
+                  height: 81px;
+                  line-height: 25px;
+                  font-size: 12px;
+                  font-weight: 100;
+                  padding: 8px 5px 1px 5px;
+                  a{
+                      margin-left: 12px;
+                      float: left;
+                      width: 50px;
+                      color: #FFFFFF;
+                  }
+                  a:hover { color: #DB3962; }
+                  .bold{
+                      margin-left: 12px; 
+                      font-weight: 900; 
+                      float: left; 
+                      width: 36px;
+                  }
+                  .nbsp{
+                      margin-left: 60px;
+                  }
+                }
+                .first { height: 81px; background: #383333; }
+                .first:hover { background: #1C1919; }
+                .second { height: 81px; background: #312D2D; }
+                .second:hover { background: #1C1919; }
+                .third { height: 57px; background: #383333; }
+                .third:hover { background: #1C1919; }
+                .fourth { height: 51px; background: #312D2D; }
+                .fourth:hover { background: #1C1919; }
+                .fifth { height: 32px; background: #383333; }
+                .fifth:hover { background: #1C1919; }
+                .last { height: 32px; background: #312D2D; 
+                    .hots { margin-left: 12px; color: #FFFFFF; float: left; }
+                    .hots:hover { color: #DB3962; width: 50px;}
+                    .join { margin-left: 8px; color: #FFFFFF; float: left; width: 100px; font-weight: 900;}
+                    .join:hover { color: #DB3962; }
+                
                 }
             }
         }
@@ -161,14 +218,18 @@ a{
     .home{
         float: left;
         padding: 0 25px;
-        a{
+        line-height: 38px;
+        a{  
+            font-size: 14px;
             font-weight: 900;
         }
     }
     .item{
         float: left;
+        line-height: 38px;
         padding: 0 25px;
         a{
+            font-size: 14px;
             font-weight: 900;
         }
     }
@@ -181,6 +242,7 @@ a{
 /*banner*/
 #banner{
     height: 420px;
+    position: relative;
     ul{
         position: relative;
         height: 420px;
@@ -188,15 +250,44 @@ a{
             width: 100%;
             height: 420px;
             position: absolute;
-            background: url(../images/1.jpg) 50% 0px no-repeat;
+            background: url(../images/2.jpg) 50% 0px no-repeat;
             a{
+                display: block;
                 width: 100%;
                 height: 420px;
             }
         }
+        li:last-child{
+            background: url(../images/1.jpg) 50% 0px no-repeat;
+        }
      
     }
-    
+    ol{
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        z-index: 2;
+        text-align: center;
+        li{
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            margin: 0 5px;
+            padding: 0;
+            a{
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background: url(../images/dot.png) right 0 no-repeat;
+                line-height: 40px;
+                overflow: hidden;
+                cursor: pointer;
+            }
+        }
+    }
+    .active{
+       background-position: 0 0;
+    }
     
 }
 /*homaline*/
@@ -650,6 +741,10 @@ a{
     @extend .public;
     height: 260px;
     padding-top: 20px;
+    .select{
+        color: #8A0003;
+        background: url(../images/select.gif) no-repeat;
+    }
     .messagetop{
         height: 35px;
         width: 100%;
@@ -666,6 +761,7 @@ a{
             float: left;
             li{
                 float: left;
+                text-align: center;
                 a{
                     float: left;
                     width: 65px;
@@ -676,14 +772,182 @@ a{
         }
     }
     .messagebottom{
-        width: 679px;
-        height: 255px;
+        float: left;
+        width: 676px;
+        height: 225px;
         text-align: center;
         font-size: 14px;
+        line-height: 32px;
         background: url(../images/map.png) no-repeat;
         border:1px solid #6B6B6B;
         .local{
+            padding: 35px 0 25px 0; font-size: 20px; font-weight: bold;
+        }
+        .cityhide{
+            display: none;
+        }
+    }
+    .show{
+        float: left;
+        border:1px solid #6B6B6B;
+    }
+}
+.cityline{
+    @extend .public;
+    height: 30px;
+    background: url(../images/linebg.jpg) ;
+}
+.security{
+    @extend .public;
+    height: 85px;
+    background: url(../images/security.jpg) center center no-repeat;
+}
+/*footer*/
+.shouhou_box{
+    width: 100%;
+    background: #E9E9E9;
+    .shouhou{
+        @extend .public;
+        height: 130px;
+        padding: 15px 0;
+        background: url(../images/shouhou.png) 0 15px no-repeat;
+        ul{
+            height: 130px;
+            border-left:1px solid #CCCCCC ;
+            li{
+                width: 195px;
+                height: 130px;
+                float: left;
+                border-right:1px solid #CCCCCC ;
+                div{
+                    padding-left: 50px;
+                    padding-top: 15px;
+                    span{
+                        width: 145px;
+                        line-height: 30px;
+                        font-weight: 900;
+                    }
+                    a{
+                        float: left; width: 145px; line-height: 24px; color: #555555;
+                    }
+                    a:hover{
+                        color: #CC0000;
+                    }
+                }
+            }
+        }
+    }
+}
+.contact_box{
+    width: 100%;
+    background: #333333;
+    height: 66px;
+    padding: 15px 0;
+    .contact{
+       width: 1170px;
+       margin: 0 auto;
+        height: 80px;
+        padding: 0 5px;
+        color: #B9B9B9;
+        .left{
+            float: left;
+            width: 1000px;
+            .address{
+                width: 1000px; height: 35px; line-height: 35px;
+            }
+            .copyright{width: 1000px; height: 30px; line-height: 30px;}
+        }
+        .right{
+            float: left; width: 170px; text-align: right;
+            .hotline{ width: 170px; height: 35px; line-height: 35px;}
+            .phonenumber{width: 170px; height: 30px; line-height: 25px; font-size: 20px; font-weight: bold; font-family: "黑体";
+                span{
+                    color: #FFFF00;
+                }
+             }
             
         }
+    }
+}
+.footicon{
+    margin: 0 auto; 
+    width: 1180px; 
+    height: 53px; 
+    background: url(../images/footicon.gif) 0 15px no-repeat; 
+    overflow: hidden;
+    padding: 15px 0;
+    a{
+        margin-right: 23px; float: left; width: 123px; height: 53px;
+    }
+    a.last{
+        margin-right: 0;
+    }
+}
+.footer_box{
+    width: 100%;
+    height: 105px;
+    padding: 15px 0;
+    background:#F0F0F0 ;
+    border-top:1px solid #ccc ;
+    color: #999;
+    a{
+        color: #888;
+    }
+    a:hover{
+        color: #CC0000;
+    }
+    .footer{
+        width: 1170px;
+        margin: 0 auto;
+        height: 80px;
+        line-height: 25px;
+        .left{
+            float: left;
+            width: 70px;
+            font-weight: 900;
+        }
+        .right{
+            float: left;
+            width: 1100px;
+            a{
+                margin-right: 8px;
+                white-space: nowrap;
+            }
+        }
+    }
+    .link{
+        height: 25px;
+        line-height: 25px;
+        text-align: right;
+    }
+}
+//rightbar
+#rightbar{
+    position:fixed;
+    bottom: 100px;
+    right: 5px;
+    z-index: 30;
+    width: 64px;
+    li{
+        text-align: center;
+        background:#c11e20 ;
+        width: 64px;
+        height: 54px;
+        position: relative;
+        margin-top: 2px;
+        padding-top: 10px;
+//      cursor: pointer;
+        img{
+            margin: 0 auto;
+        }
+        
+       span{
+           font-family: "宋体";
+           font-size: 12px;
+           font-weight: 400;
+           display: block;
+           margin-top: 5px;
+           color: #FFFFFF;
+       }
     }
 }
