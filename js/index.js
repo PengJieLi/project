@@ -35,6 +35,11 @@ window.onload=function(){
 		$(".messagebottom").children("div").eq(index).show()
 								.siblings()
 								.hide()
+		$(".showimg div").eq(index).removeClass("hide")
+									.addClass("show")
+									.siblings()
+									.removeClass("show")
+									.addClass("hide")
 	});
 	//点击按钮变色
 	$(".selectitem:first div").click(function(){
@@ -101,4 +106,32 @@ window.onload=function(){
 	$("#rightbar a:last").click(function(){
 		$("html,body").scroll(0)
 	});
+	
+	$(".keycode").focus(function(){
+		$(this).val("");
+	})
+	$(".keycode").blur(function(){
+		if($(this).val()){
+			$(this).val($(this).val());
+		}else{
+			$(this).val("请输入型号或者名称");
+		}
+	})
+	//登录检测
+	var hstr=getCookie("info");
+	var arr=JSON.parse(hstr);
+	if(arr.length!=0){
+		$(".span_name").html(arr[0].uname+"，欢迎光临戴欧妮珠宝网！");
+		$(".a_login").hide();
+		$(".a_reg").hide();
+		$(".span_name").after("<a class='a_exit' href='#' style='margin-right:15px'>退出</a>");
+		
+	}
+	$(".a_exit").click(function(){
+		$(".a_login").show();
+		$(".a_reg").show();
+		$(this).hide();
+		$(".span_name").html("您好，欢迎光临戴欧妮珠宝网！");
+	})
+	
 }

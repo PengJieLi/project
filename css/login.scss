@@ -1,0 +1,113 @@
+//login
+.login_box{
+    width: 100%;
+    height: 588px;
+    background:#FBEDEC url(../images/login/login.jpg) no-repeat center center;
+    .login{
+        width: 1180px;
+        height: 588px;
+        margin: 0 auto;
+        .login_right{
+            width: 518px;
+            height: 588px;
+            float: right;
+            .loginname_top{
+                width: 385px;
+                height: 25px;
+                margin-top: 112px;
+                text-align: right;
+                a{
+                    font-size: 14px;
+                    color: #DB3962;
+                }
+            }
+            .name_input{
+                width: 390px;
+                height: 30px;
+                margin-top: 41px;
+                .uname{
+                    width: 150px;
+                    height: 28px;
+                    margin-left: 150px;
+                    border: 0;
+                    font-size: 14px;
+                    color: #ccc; 
+                }
+                #s1{
+                    display: block;
+                    height: 18px;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+            }
+            .pwd_input{
+                width: 390px;
+                height: 30px;
+                margin-top: 24px;
+                .pwd{
+                    width: 155px;
+                    height: 28px;
+                    margin-left: 150px;
+                    border: 0;
+                    font-size: 14px;
+                    color: #ccc; 
+                }
+                #s2{
+                    display: block;
+                    height: 18px;
+                    margin-top: 5px;
+                    text-align: center;
+                }
+            }
+            .autologin{
+                width: 390px;
+                height: 35px;
+                margin-top: 15px;
+                font-size: 14px;
+                .cb_login{
+                    width: 13px;
+                    height: 13px;
+                    margin-left: 60px;
+                    margin-top: 10px;
+                    float: left;
+                }
+                .z1{
+                    width: 192px;
+                    height: 24px;
+                    float: left;
+                    margin-top: 6px;
+                    margin-left: 5px;
+                }
+                .forget{
+                    width: 70px;
+                    height: 24px;
+                    line-height: 24px;
+                    float: left;
+                    padding-top:5px ;
+                }
+            }
+            .login_btn{
+                width: 277px;
+                height: 41px;
+                background: url(../images/login/loginbutn.png) no-repeat ;
+                margin-left: 60px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            .three_login{
+                width: 330px;
+                height: 75px;
+                margin-left: 80px;
+                margin-top: 46px;
+                text-align: center;
+                img{
+                    margin: 0 9px;
+                    float: left;
+                }
+                .img1{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

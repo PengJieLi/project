@@ -542,7 +542,14 @@
       display: none; }
   #message .show {
     float: left;
-    border: 1px solid #6B6B6B; }
+    display: block;
+    border: 1px solid #6B6B6B; 
+    }
+   #message .hide{
+   	display: none;
+   	float: left;
+    border: 1px solid #6B6B6B; 
+   }
 
 .cityline {
   height: 30px;
