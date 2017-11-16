@@ -191,5 +191,52 @@
       font-weight: 900;
       text-indent: 10px;
       background: url(../images/luozuan/headbg.png); }
+  .diamondlist .listitem {
+    width: 960px;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px dashed #5E5E5E; }
+    .diamondlist .listitem .itembox {
+      width: 60px;
+      height: 20px;
+      padding-top: 8px;
+      padding-right: 1px;
+      text-align: center;
+      float: left; }
+      .diamondlist .listitem .itembox img {
+        display: inline-block; }
+    .diamondlist .listitem .giaitemtext {
+      float: left;
+      width: 53px;
+      height: 35px;
+      padding-right: 1px;
+      text-align: center; }
+    .diamondlist .listitem .itemtext {
+      float: left;
+      width: 64px;
+      height: 35px;
+      padding-right: 1px;
+      text-align: center; }
+    .diamondlist .listitem .itemgray {
+      float: left;
+      width: 86px;
+      height: 35px;
+      padding-right: 1px;
+      text-align: center;
+      text-decoration: line-through; }
+    .diamondlist .listitem .itemprice {
+      float: left;
+      width: 86px;
+      height: 35px;
+      padding-right: 1px;
+      text-align: center; }
+    .diamondlist .listitem .itemorder {
+      float: left;
+      width: 80px;
+      height: 35px;
+      text-align: center; }
+      .diamondlist .listitem .itemorder img {
+        display: inline-block;
+        margin-top: 8px; }
 
 /*# sourceMappingURL=luozuan.css.map */

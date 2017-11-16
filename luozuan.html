@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/luozuan.css"/>
 		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../cookie.js" type="text/javascript" charset="utf-8"></script>
-		<!--<script src="js/login.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/luozuan.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -16,8 +16,8 @@
 			<div id="top">
 				<div class="left">
 					<span>您好，欢迎光临戴欧妮珠宝网！</span>
-					<a href="#">登录</a> /
-					<a href="#">注册</a> <span>体验中心：</span>
+					<a href="login.html">登录</a> /
+					<a href="register.html">注册</a> <span>体验中心：</span>
 					<a href="#">新疆·乌鲁木齐北京南路旗舰店</a>
 					<a href="#">切换</a>
 				</div>
@@ -108,7 +108,7 @@
 			</ul>
 			
 			<div class="home"><a href="index.html">首页</a></div>
-			<div class="item"><a href="#">裸钻</a></div>
+			<div class="item"><a href="luozuan.html">裸钻</a></div>
 			<div class="item"><a href="#">钻戒定制</a></div>
 			<div class="item"><a href="#">定价产品</a></div>
 			<div class="item"><a href="#">黄金</a></div>
@@ -138,12 +138,12 @@
 			<div class="findwrap">
 				<div class="wraphead">重量（CARAT）:</div>
 				<div class="wrapitem">
-					<input type="text" value="0.00" /> - 
-					<input type="text" value="10.00" /> 克拉
+					<input type="text" value="0.00"  class="sweight"/> - 
+					<input type="text" value="10.00"  class="bweight"/> 克拉
 				</div>
 				<div class="wraphead" style="margin-left: 50px;">证书号（CertNo）:</div>
 				<div class="wrapitem">
-					<input type="text" />
+					<input type="text" class="zsh" />
 				</div>
 			</div>
 			<div class="findwrap" style="height:60px;">
@@ -256,8 +256,8 @@
 	            </div>
 	        </div>
 	        <div class="findbutn">
-	            <div class="button" >裸钻搜索</div>
-	            <div class="button" >重置</div>
+	            <div class="button" id="search">裸钻搜索</div>
+	            <div class="button" id="reset">重置</div>
 	            <div style="float:left;margin-left:150px;height:40px;line-height:40px;cursor:pointer;"><a href="http://www.dionly.com/baike/8569/" target="_blank">不懂钻石参数？点这里</a></div>
 	        </div>
 		</div>
@@ -279,15 +279,41 @@
 					<div class="giaheadtext" style="width: 65px;"><span >时效</span></div>
 					<div class="giaheadtext" style="width: 74px;"><span >订购</span></div>
 				</div>
+				<div class="diamondlist" id="diamondlist_item" style="width: 920px;margin-top: 0;">
+					<!--<div class="listitem" id="listwrap_216306177">
+						<div class="itembox">
+							<img src="images/luozuan/1.png" alt="圆形">
+						</div>
+						<div class="giaitemtext">0.30</div>
+						<div class="giaitemtext">SI2</div>
+						<div class="giaitemtext">K</div>
+						<div class="giaitemtext">VG</div>
+						<div class="giaitemtext">VG</div>
+						<div class="giaitemtext">EX</div>
+						<div class="giaitemtext">S</div>
+						<div class="itemtext">GIA</div>
+						<div class="itemtext" style="width:70px;cursor:pointer;">
+							<a href="/diamond/diamondshow.aspx?id=2267427042" target="_blank">2267427042</a>
+						</div>
+						<div class="itemgray">￥6611.00</div>
+						<div class="itemprice">￥3489.00</div>
+						<div class="itemtext">联系客服</div>
+						<div class="itemorder">
+							<a href="/diamond/diamondshow.aspx?id=2267427042" target="_blank">
+								<img src="images/luozuan/buy.jpg" border="0">
+							</a>
+						</div>
+					</div>-->
+				</div>
 			</div>
 			<div class="list_right">
 				<div class="listright_top">
 					<div class="lt_head">精选钻戒</div>
 					<dl class="xin">
-						<dt><img src="images/luozuan/xin.jpg" alt="" /></dt>
-						<dd>永恒之心</dd>
-						<dt><img src="images/luozuan/mou.jpg" alt="" /></dt>
-						<dd>花眸</dd>
+						<dt><a href=""><img src="images/luozuan/xin.jpg" alt="" /></a></dt>
+						<dd><a href="">永恒之心</a></dd>
+						<dt><a href=""><img src="images/luozuan/mou.jpg" alt="" /></a></dt>
+						<dd><a href="">花眸</a></dd>
 					</dl>
 				</div>
 				<div class="listright_bottom">
