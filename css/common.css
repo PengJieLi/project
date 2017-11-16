@@ -400,3 +400,66 @@ a {
       display: block;
       margin-top: 5px;
       color: #FFFFFF; }
+      
+
+/*message*/
+#message {
+  height: 260px;
+  padding-top: 20px; }
+  #message .select {
+    color: #8A0003;
+    background: url(../images/select.gif) no-repeat; }
+  #message .messagetop {
+    height: 35px;
+    width: 100%; }
+    #message .messagetop h3 {
+      float: left;
+      width: 385px;
+      padding-left: 15px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 18px;
+      font-weight: 900; }
+    #message .messagetop ul {
+      float: left; }
+      #message .messagetop ul li {
+        float: left;
+        text-align: center; }
+        #message .messagetop ul li a {
+          float: left;
+          width: 65px;
+          height: 35px;
+          line-height: 35px; }
+  #message .messagebottom {
+    float: left;
+    width: 676px;
+    height: 225px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    background: url(../images/map.png) no-repeat;
+    border: 1px solid #6B6B6B; }
+    #message .messagebottom .local {
+      padding: 35px 0 25px 0;
+      font-size: 20px;
+      font-weight: bold; }
+    #message .messagebottom .cityhide {
+      display: none; }
+  #message .show {
+    float: left;
+    display: block;
+    border: 1px solid #6B6B6B; 
+    }
+   #message .hide{
+   	display: none;
+   	float: left;
+    border: 1px solid #6B6B6B; 
+   }
+
+.cityline {
+  height: 30px;
+  background: url(../images/linebg.jpg); }
+
+.security {
+  height: 85px;
+  background: url(../images/security.jpg) center center no-repeat; }

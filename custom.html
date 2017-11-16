@@ -3,9 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/custom.css"/>
 		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="script/jquery.pagination.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/common.css"/>
+		<link rel="stylesheet" type="text/css" href="style/pagination.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<script src="../cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/custom.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
@@ -134,7 +137,7 @@
 					<div class="lt_head">商品分类</div>
 					<ul >
 						<li ><span class="span_a nodehide"></span><a href="#">定价产品</a>
-							<div class="list_box clearfix">
+							<div class="list_box clearfix" style="display: none;">
 								<div class="itemname"><a class="plink" href="/Products/qqRqqq1q0q1p2p5p9.shtml">女戒</a></div>
 								<div class="itemname"><a class="plink" href="/Products/qqMqqq1q0q1p2p5p9.shtml">男戒</a></div>
 								<div class="itemname"><a class="plink" href="/Products/qqAqqq1q0q1p2p5p9.shtml">对戒</a></div>
@@ -145,8 +148,8 @@
 								<div class="itemname"><a class="plink" href="/Products/Cqqqqq1q0q1p2p5p9.shtml">彩宝</a></div>
 							</div>
 						</li>
-						<li ><span class="span_a "></span><a href="#">钻戒定制</a>
-							<div class="list_box clearfix" style="display: none;">
+						<li ><span class="span_a "></span><a href="#" class="cus">钻戒定制</a>
+							<div class="list_box clearfix" >
 								<div class="itemname"><a class="plink" href="/Products/qqRqqq1q0q1p2p5p9.shtml">钻石</a></div>
 								<div class="itemname"><a class="plink" href="/Products/qqMqqq1q0q1p2p5p9.shtml">珍珠</a></div>
 								<div class="itemname"><a class="plink" href="/Products/qqAqqq1q0q1p2p5p9.shtml">女戒</a></div>
@@ -191,7 +194,57 @@
 					</ul>
 				</div>
 			</div>
-			<div class="list_right"></div>
+			<div class="list_right">
+				<div class="listselect">
+					<div id="mclass" class="selectwrap">
+	                    <div class="wraphead">类别：</div>
+	                    <div class="wrapitem">
+	                    	<div class="span">|</div>
+	                    	<div class="w030"><a href="/Products/Dqqqqq1q0q3.shtml">钻石</a></div>
+						</div>
+                	</div>
+                	<div id="sclass" class="selectwrap">
+	                    <div class="wraphead">类型：</div>
+	                    <div class="wrapitem">
+	                    	<div class="span">|</div>
+	                    	<div class="w030"><a href="/Products/qqRqqq1q0q3.shtml">女戒</a></div>
+							<div class="span">|</div><div class="w030"><a href="/Products/qqMqqq1q0q3.shtml">男戒</a></div>
+							<div class="span">|</div><div class="w030"><a href="/Products/qqPqqq1q0q3.shtml">吊坠</a></div>
+							<div class="span">|</div><div class="w030"><a href="/Products/qqEqqq1q0q3.shtml">耳饰</a></div>
+							<div class="span">|</div><div class="w055"><a href="/Products/qqBqqq1q0q3.shtml">手链/手镯</a></div>
+							<div class="span">|</div><div class="w055"><a href="/Products/qqNqqq1q0q3.shtml">项链/链牌</a></div>
+						</div>
+	                </div>
+	                <div id="xclass" class="selectwrap">
+	                    <div class="wraphead">材质：</div>
+	                    <div class="wrapitem">
+	                    	<div class="span">|</div>
+	                    	<div class="w250"><a href="/Products/qqqDqq1q0q3.shtml">18K</a></div>
+							<div id="showdetailx" class="w250" style="">备注：可定制 PT900 / PT950</div>
+	                    </div>
+	                </div>
+	                <div id="proprice" class="selectwrap" style="border-bottom:none;">
+	                    <div class="wraphead">价格：</div>
+	                    <div class="wrapitem">
+	                    	<div class="span">|</div>
+	                    	<div class="w080"><a href="/Products/qqqqbq1q0q3.shtml">1000元以下</a></div>
+							<div class="span">|</div><div class="w080"><a href="/Products/qqqqcq1q0q3.shtml">1000-1999</a></div>
+							<div class="span">|</div><div class="w080"><a href="/Products/qqqqdq1q0q3.shtml">2000-2999</a></div>
+							<div class="span">|</div><div class="w080"><a href="/Products/qqqqeq1q0q3.shtml">3000-4999</a></div>
+							<div class="span">|</div><div class="w080"><a href="/Products/qqqqfq1q0q3.shtml">5000元以上</a></div>
+						</div>
+               		</div>
+				</div>
+				<div class="listright_bottom clearfix">
+					<!--<div class="wraperitem">
+                        <div class="itemimg"><a href="/Products/4533/" target="_blank" title="爱情手镯（DBW134533D）"><img src="images/custom/1.png" title="爱情手镯（DBW134533D）" alt="爱情手镯（DBW134533D）"></a></div>
+                        <div class="itemname"><a href="/Products/4533/" target="_blank" title="爱情手镯（DBW134533D）">爱情手镯<span>（DBW134533D）</span></a></div>
+                        <div class="itemprice"> <div class="pricemarket">市场价：<span style="text-decoration:line-through;">￥19841.00</span></div>
+                        <div class="pricemember">商城价：<span>￥10443.00</span></div> </div>
+                    </div>-->
+				</div>
+				<div class="M-box" style="margin-left: 300px;margin-top: 100px;"></div>
+			</div>
 			
 		</div>
 		

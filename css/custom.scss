@@ -44,6 +44,10 @@
                     a{
                         font-weight: 900;
                     }
+                   .cus{
+                       color: red;
+                   }
+                   
                     .list_box{
                         width: 202px;
                         margin-bottom: 15px;
@@ -123,5 +127,107 @@
     .list_right{
         width: 922px;
         height: 2404px;
+        float: right;
+        .listselect{
+            width: 920px;
+            padding: 10px 0;
+            border: 1px solid #CECECE;
+            background: #F8F8F8;
+            .selectwrap{
+                width: 900px;
+                height: 40px;
+                margin: 0 auto;
+                border-bottom: 1px dashed #CECECE;
+                .wraphead{
+                    float: left;
+                    padding-left: 10px;
+                    width: 50px;
+                    height: 40px;
+                    line-height: 40px;
+                    color: #DB3962;
+                }
+                .wrapitem{
+                    float: left;
+                    height: 40px;
+                    line-height: 40px;
+                    .span{
+                        float: left;
+                        padding: 0 15px;
+                    }
+                    .w030{
+                        float: left;
+                        width: 30px;
+                    }
+                    .w055{
+                        float: left;
+                        width: 55px;
+                    }
+                    .w250{
+                        float: left;
+                        width: 250px;
+                    }
+                    .w080{
+                        float: left;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+        .listright_bottom{
+            width: 921px;
+//          height: 904px;
+            margin-top: 20px;
+            border-top: 1px solid #CECECE;
+            border-left: 1px solid #CECECE;
+            .wraperitem{
+                float: left;
+                width: 306px;
+                border-right: 1px solid #CECECE;
+                border-bottom: 1px solid #CECECE;
+                overflow: hidden;
+                .itemimg{
+                    width: 200px;
+                    height: 210px;
+                    margin: 0 auto;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        border: 0;
+                        margin: 10px;
+                    }
+                }
+                .itemname{
+                    width: 306px;
+                    height: 40px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    text-align: center;
+                }
+                .itemprice{
+                    width: 306px;
+                    height: 40px;
+                    background: #F8F8F8;
+                    .pricemarket{
+                        float: left;
+                        padding-left: 13px;
+                        width: 140px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                    .pricemember{
+                        float: right;
+                        width: 140px;
+                        height: 40px;
+                        padding-right: 13px;
+                        line-height: 40px;
+                        text-align: right;
+                        span{
+                            font-size: 14px;
+                            color: #DB3962;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
