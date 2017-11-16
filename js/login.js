@@ -13,28 +13,32 @@ $(function(){
 	var arr=JSON.parse(str);
 	for (let i=0;i<arr.length;i++) {
 		$(".uname").blur(function(){
+			$("#s1").show();
 			if(arr[i].uname==$(this).val()){
 				flagName=true;
+				$("#s1").hide().val("");
 			}else{
 				$("#s1").html("用户名不正确").css("color","red");
 				flagName=false;
 			}
-			$("#s1,#s2").hide().val("");
+//			$("#s1,#s2").hide().val("");
 		});
 		$(".pwd").blur(function(){
+			$("#s2").show();
 			if(arr[i].pwd==$(this).val()){
 				flagPwd=true;
+				$("#s2").hide().val("");
 			}else{
 				$("#s2").html("密码不正确").css("color","red");
 				flagPwd=false;
 			}
-			$("#s1,#s2").hide().val("");
+//			$("#s1,#s2").hide().val("");
 		})
 	}
-	$("#s1,#s2").hide();
+//	$("#s1,#s2").hide();
 	$(".login_btn").click(function(){
 		
-		$("#s1,#s2").show();
+//		$("#s1,#s2").show();
 		if(flagName&&flagPwd){
 			if($(".cb_login").prop("checked")){
 				setCookie("info",str,1);

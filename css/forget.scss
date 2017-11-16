@@ -131,5 +131,50 @@
                 text-align:center ;
             }
         }
+        .success{
+            display: none;
+            width: 670px;
+            height: 37px;
+            margin-left: 330px;
+            padding-top: 50px;
+            .lock{
+                width: 340px;
+                height:100px;
+                background: url(../images/lock.png) no-repeat center 20px;
+            }
+            .t{
+                width: 340px;
+                text-align: center;
+                font-size: 14px;
+            }
+            .b{
+                padding-left: 20px;
+                height:40px;
+                margin-top: 50px;
+                text-align: center;
+                line-height: 38px;
+                color: #fff;
+                font-weight: 900;
+                font-size: 16px;
+                .shop{
+                    width: 142px;
+                    height: 38px;
+                    background:#9e0000;
+                    float: left;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .my_box{
+                    width: 145px;
+                    height: 38px;
+                    background:#9e0000 ;
+                    float: left;
+                    margin-left: 14px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+        
     }
 }

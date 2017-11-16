@@ -109,5 +109,43 @@
         line-height: 20px;
         color: #B10101;
         text-align: center; }
+    .forget_box .forget .success {
+      display: none;
+      width: 670px;
+      height: 37px;
+      margin-left: 330px;
+      padding-top: 50px; }
+      .forget_box .forget .success .lock {
+        width: 340px;
+        height: 100px;
+        background: url(../images/lock.png) no-repeat center 20px; }
+      .forget_box .forget .success .t {
+        width: 340px;
+        text-align: center;
+        font-size: 14px; }
+      .forget_box .forget .success .b {
+        padding-left: 20px;
+        height: 40px;
+        margin-top: 50px;
+        text-align: center;
+        line-height: 38px;
+        color: #fff;
+        font-weight: 900;
+        font-size: 16px; }
+        .forget_box .forget .success .b .shop {
+          width: 142px;
+          height: 38px;
+          background: #9e0000;
+          float: left;
+          border-radius: 5px;
+          cursor: pointer; }
+        .forget_box .forget .success .b .my_box {
+          width: 145px;
+          height: 38px;
+          background: #9e0000;
+          float: left;
+          margin-left: 14px;
+          border-radius: 5px;
+          cursor: pointer; }
 
 /*# sourceMappingURL=forget.css.map */

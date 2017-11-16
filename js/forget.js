@@ -2,6 +2,9 @@ $(function(){
 	$(":text").focus(function(){
 		$(this).css("color","#000")
 	})
+	if(!getCookie("info")){
+		return ;
+	}
 	var nstr=getCookie("info");
 	var narr=JSON.parse(nstr);
 	
@@ -17,49 +20,49 @@ $(function(){
 			$("#i1").html("用户名不合法").css("color","red");
 			flagName=false;
 		}*/
-		if(narr[0].uname==$(this)){
+		$("#i1").show()
+		if(narr[0].uname==$(this).val()){
 			flagName=true;
+			$("#i1").hide().val("");
 		}else{
 			flagName=false;
 			$("#i1").html("用户名不正确").css("color","red");
 		}
 		
-		$("#i1,#i2,#i3,#i4").hide().val("");
 
 	});
 	
 	//密码
 	var flagPwd=null;
 	$(".cpwd").blur(function(){
+		$("#i3").show();
 		var str=$(this).val();
 		var reg=/\w+.{5,19}/;
 		if (reg.test(str)) {
-//			$("#s4").html("合法");
+			$("#i3").hide().val("");
 			flagPwd=true;
 		}else{
 			$("#i3").html("密码不合法").css("color","red");
 			flagPwd=false;
 		}
-		$("#i1,#i2,#i3,#i4").hide().val("");
+//		$("#i1,#i2,#i3,#i4").hide().val("");
 	})
 	//确认密码
 	var flagRpwd=null;
 	$(".qpwd").blur(function(){
+		$("#i4").show();
 		if($(this).val()==$(".cpwd").val()){
-//			$("#s5").html("合法");
+			$("#i4").hide().val("");
 			flagRpwd=true;
 		}else{
 			$("#i4").html("密码不一致").css("color","red");
 			flagRpwd=false;
 		}
-		$("#i1,#i2,#i3,#i4").hide().val("");
 	})
 	
-	$("#i1,#i2,#i3,#i4").hide();
 	//注册成功
 	var arr=[];
 	$(".forgetsubmit").click(function(){
-		$("#i1,#i2,#i3,#i4").show();
 		
 		if(flagName&&flagPwd&&flagRpwd){
 			var json={
@@ -68,9 +71,15 @@ $(function(){
 			}
 			arr.push(json);
 			setCookie("info",JSON.stringify(arr));
-//			location.href="login.html";
+			$(".forget_top").hide();
+			$(".success").show();
 		}
 	})
+	//立即购物
+	$(".shop").click(function(){
+		location.href="index.html";
+	})
+	
 	
 	function getRand(min,max){
 		return Math.round( Math.random()*(max-min) + min );
