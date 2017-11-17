@@ -155,5 +155,14 @@ window.onload=function(){
 		$(this).hide();
 		$(".span_name").html("您好，欢迎光临戴欧妮珠宝网！");
 	})
+	//珍宝箱数量
+	if(!getCookie("product")){
+		return ;
+	}
+	var nstr=getCookie("product");
+	var narr=JSON.parse(nstr);
+	var count=narr.length;
+	$(".count").html(count);
+	
 	
 }

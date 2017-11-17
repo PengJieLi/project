@@ -12,7 +12,7 @@ $(function(){
 						.siblings()
 						.find(".list_box").hide()
 	})
-	//读取json的数据并显示在listright_bottom里
+	//读取json的数据并显示在listright_bottom里 分页
 	$.ajax({
 		type:"get",
 		url:"custom.json",
@@ -35,6 +35,7 @@ $(function(){
 			        })
 				}
 			})
+			
 		}
 	});
 	
@@ -43,8 +44,8 @@ $(function(){
 		for(var i=(index-1)*9;i<index*9;i++){
 			if(i<arr.length){
 				str+=`<div class="wraperitem">
-                        <div class="itemimg"><a href="/Products/4533/" target="_blank" ><img src="images/custom/${arr[i].src}" title="${arr[i].name}（${arr[i].num}）" alt="${arr[i].name}（${arr[i].num}）"></a></div>
-                        <div class="itemname"><a href="/Products/4533/" target="_blank" title="${arr[i].name}（DBW134533D）">${arr[i].name}<span>（${arr[i].num}）</span></a></div>
+                        <div class="itemimg"><a href="product.html?pid=${arr[i].id}" target="_blank" ><img src="images/custom/${arr[i].src[0]}" title="${arr[i].name}（${arr[i].num}）" alt="${arr[i].name}（${arr[i].num}）"></a></div>
+                        <div class="itemname"><a href="product.html?pid=${arr[i].id}" target="_blank" title="${arr[i].name}（DBW134533D）">${arr[i].name}<span>（${arr[i].num}）</span></a></div>
                         <div class="itemprice"> <div class="pricemarket">市场价：<span style="text-decoration:line-through;">￥${arr[i].oprice}</span></div>
                         <div class="pricemember">商城价：<span>￥${arr[i].oprice}</span></div> </div>
                     </div>`
@@ -52,5 +53,6 @@ $(function(){
 		}
 		$(".listright_bottom").html(str);
 	}
+	
 })
 

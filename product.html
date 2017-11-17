@@ -5,10 +5,10 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/product.css"/>
-		
 		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/product.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--top-->
@@ -23,7 +23,7 @@
 				</div>
 				<div class="right">
 					<a href="#" class="user">我的戴欧妮</a>
-					<a href="#" class="cart">我的珠宝箱[<span class="count">0</span>]</a>
+					<a href="shopcar.html" class="cart">我的珠宝箱[<span class="count">0</span>]</a>
 					<a href="#" class="certify">正品认证</a>
 					<a href="#" class="yuyue">预约进店</a>
 					<a href="#" class="mobile">手机版</a>
@@ -109,7 +109,7 @@
 			
 			<div class="home"><a href="index.html">首页</a></div>
 			<div class="item"><a href="luozuan.html">裸钻</a></div>
-			<div class="item"><a href="#">钻戒定制</a></div>
+			<div class="item"><a href="custom.html">钻戒定制</a></div>
 			<div class="item"><a href="#">定价产品</a></div>
 			<div class="item"><a href="#">黄金</a></div>
 			<div class="item"><a href="#">高级定制</a></div>
@@ -128,13 +128,21 @@
 					<div class="item_line"></div>
 					<div class="item_left">
 						<div class="large">
-							<img src="images/custom/1.png" alt="" />
+							<img src="images/custom/2.jpg" alt="" />
 							<div class="mask"></div>
+							<div class="big_box">
+								
+							</div>
 						</div>
 						<div class="small">
 							<div class="smallL"></div>
 							<div class="smallC">
-								<ul><li><img src="images/custom/1.png" alt="" /></li>
+								<ul id="imglist">
+									<!--<li><img src="images/custom/2.jpg" alt="" /></li>
+									<li><img src="images/custom/2_2.jpg" alt="" /></li>
+									<li><img src="images/custom/2_3.jpg" alt="" /></li>
+									<li><img src="images/custom/2_4.jpg" alt="" /></li>-->
+								</ul>
 							</div>
 							<div class="smallR"></div>
 						</div>
@@ -153,7 +161,229 @@
 	                        <div class="text">商城价格：</div>
 	                        <div class="data price">￥<span id="itemprice">10443</span><span style="font-size:12px;font-weight:normal;"></span></div>
 	                    </div>
+	                    <div id="fweight" class="list">
+	                        <div class="text">副石说明：</div>
+	                        <div class="data">钻石&nbsp;数量：18粒&nbsp;&nbsp;重量：0.20克拉&nbsp;&nbsp;净度：SI&nbsp;&nbsp;颜色：I-J&nbsp;&nbsp;切工：</div>
+	                    </div>
+	                    <div id="xclass" class="list">
+	                        <div class="text">选用材质：</div>
+	                        <div class="data" id="gsmateria"><span title="D" class="materia materiaselect" >18K</span><span title="E" class="materia" >PT900</span><span title="F" class="materia" >PT950</span></div>
+	                    </div>
+	                    <div id="maindiamon" class="list">
+	                        <div class="text">钻石重量：</div>
+		                        <div class="data">
+		                            <select name="selectzweight" id="selectzweight" class="dropdown" >
+										<option value="10">1-10分</option>
+										<option value="15">10-15分</option>
+										<option value="20">15-20分</option>
+										<option value="25">20-25分</option>
+										<option value="30">25-30分</option>
+										<option value="35">30-35分</option>
+										<option value="40">35-40分</option>
+										<option value="45">40-45分</option>
+										<option selected="selected" value="50">45-50分</option>
+										<option value="55">50-55分</option>
+										<option value="60">55-60分</option>
+										<option value="65">60-65分</option>
+										<option value="70">65-70分</option>
+										<option value="75">70-75分</option>
+										<option value="80">75-80分</option>
+										<option value="85">80-85分</option>
+										<option value="90">85-90分</option>
+										<option value="95">90-95分</option>
+										<option value="100">95-100分</option>
+										<option value="105">100-105分</option>
+										<option value="110">105-110分</option>
+										<option value="115">110-115分</option>
+										<option value="120">115-120分</option>
+										<option value="125">120-125分</option>
+										<option value="130">125-130分</option>
+										<option value="135">130-135分</option>
+										<option value="140">135-140分</option>
+										<option value="145">140-145分</option>
+										<option value="150">145-150分</option>
+										<option value="155">150-155分</option>
+										<option value="160">155-160分</option>
+										<option value="165">160-165分</option>
+										<option value="170">165-170分</option>
+									</select>
+		                            &nbsp;<a href="/diamond/" target="_blank" class="diamond">现在去选钻石？</a>
+		                        </div>
+		                </div>
+	                    <div id="ringsizewrap" class="list">
+	                        <div id="shoucunname" class="text">手寸：</div>
+		                        <div class="data">
+		                            <select name="ringsize" id="ringsize" class="dropdown" onchange="ajaxProductPrice();">
+										<option value="4">4</option>
+										<option value="4.5">4.5</option>
+										<option value="5">5</option>
+										<option value="5.5">5.5</option>
+										<option value="6">6</option>
+										<option value="6.5">6.5</option>
+										<option value="7">7</option>
+										<option value="7.5">7.5</option>
+										<option value="8">8</option>
+										<option value="8.5">8.5</option>
+										<option value="9">9</option>
+										<option value="9.5">9.5</option>
+										<option value="10">10</option>
+										<option value="10.5">10.5</option>
+										<option value="11">11</option>
+										<option value="11.5">11.5</option>
+										<option value="12">12</option>
+										<option value="12.5">12.5</option>
+										<option value="13">13</option>
+										<option value="13.5">13.5</option>
+										<option value="14">14</option>
+										<option value="14.5">14.5</option>
+										<option value="15">15</option>
+										<option value="15.5">15.5</option>
+										<option value="16">16</option>
+										<option value="16.5">16.5</option>
+										<option value="17">17</option>
+										<option value="17.5">17.5</option>
+										<option value="18">18</option>
+										<option value="18.5">18.5</option>
+										<option value="19">19</option>
+										<option value="19.5">19.5</option>
+										<option value="20">20</option>
+										<option value="20.5">20.5</option>
+										<option value="21">21</option>
+										<option value="21.5">21.5</option>
+										<option value="22">22</option>
+										<option value="22.5">22.5</option>
+										<option value="23">23</option>
+										<option value="23.5">23.5</option>
+										<option value="24">24</option>
+										<option value="24.5">24.5</option>
+										<option value="25">25</option>
+										<option value="25.5">25.5</option>
+										<option value="26">26</option>
+										<option value="26.5">26.5</option>
+										<option value="27">27</option>
+										<option value="27.5">27.5</option>
+										<option value="28">28</option>
+										<option value="28.5">28.5</option>
+										<option value="29">29</option>
+										<option value="29.5">29.5</option>
+										<option value="30">30</option>
+										<option value="30.5">30.5</option>
+										<option value="31">31</option>
+										<option value="31.5">31.5</option>
+										<option value="32">32</option>
+										<option value="32.5">32.5</option>
+										<option value="33">33</option>
+										<option value="33.5">33.5</option>
+										<option value="34">34</option>
+										<option value="34.5">34.5</option>
+									</select>
+		                        </div>
+		                </div>
+						<div id="carvewrodwrap" class="list">
+	                        <div class="text">刻字：</div>
+	                        <div class="data"><input type="text" id="carveword" name="carveword" maxlength="8" class="crave">如：Love一生（8个字符以内，中文为4个字符）</div>
+	                    </div>
+	                    <div id="caibaoinfo" class="list">
+	                        <div id="caibaoshuomingname" class="text">价格说明：</div>
+	                        <div id="caobaoshuoming" class="data">此售价为整个戒托的售价</div>
+	                    </div>
+	                    <div id="diamoninfo" class="list">
+	                        <div class="text">证书说明：</div>
+	                        <div id="zhengshushuoming" class="data">单个钻石小于20分的钻饰，只出具成品鉴定证书</div>
+	                    </div>
+	                    <div id="ortherinfo" class="list">
+	                        <div class="text">特别说明：</div>
+	                        <div class="data">15工作日，特快定制6工作日，不含邮寄时间，有问题请<a href="http://p.qiao.baidu.com//im/index?siteid=3340224&amp;ucid=6543216" target="_blank" rel="nofollow" class="consult">咨询客服</a></div>
+	                    </div>
+	                    <div id="peisonginfo" class="list">
+	                        <div class="text">库存配送：</div>
+	                        <div class="data">有货，全国顺丰保价包邮</div>
+	                    </div>
+	                    <div id="productnote" class="list">
+	                        <div class="text">备注：</div>
+	                        <div class="data">定制售价含 20% 损耗，最终价格按成品金重多退少补</div>
+	                    </div>
+	                    <div class="info">
+	                        <!--<div class="total" style="display:none;"><span>预估：￥<span id="t_price">3024</span>元，</span>材质：<span id="t_materia">G750</span>，重量：<span id="t_weight">3.00</span>克</div>-->
+	                        <div class="button" id="buybtn"><div class="addtocart_zuan" ></div>
+	                            <div class="addtofavor" ></div>
+	                        </div>
+	                   </div>	
 					</div>
+						
+				</div>
+				<div class="productcont clearfix">
+					<div class="contleft">
+	                    <div class="lefthead">百分百安心购物保证</div>
+	                    <div class="security"><img src="images/custom/security.gif" alt=""></div>
+	                    <div id="hotshead" class="lefthots">热门推荐</div>
+	                    <div id="hotslist" class="hotslist">
+	                        <div class="hotsimgs">
+	                        	<a href="/caibao/107/">
+	                        		<img src="images/custom/FR-8039-0.jpg" alt="永恒之心 DRW010625D" title="永恒之心 DRW010625D">
+	                      		</a>
+	                        </div>
+	                        <div class="hotstext">
+	                        	<a href="/caibao/107/">永恒之心</a>
+	                        </div>
+	                        <div class="hotsimgs">
+	                        	<a href="/caibao/3913/">
+	                        		<img src="images/custom/201503061325508854.jpg" alt="花眸 DRW010077D" title="花眸 DRW010077D">
+	                        	</a>
+	                        </div>
+	                        <div class="hotstext">
+	                        	<a href="/caibao/3913/">花眸</a>
+	                        </div>
+	                        <div class="hotsimgs">
+	                        	<a href="/caibao/3865/">
+	                        		<img src="images/custom/201502041538168873.jpg" alt="最爱 DRW010079D" title="最爱 DRW010079D">
+	                        	</a>
+	                        </div>
+	                        <div class="hotstext">
+	                        	<a href="/caibao/3865/">最爱</a>
+	                        </div>
+	                        <div class="hotsimgs">
+	                        	<a href="/caibao/3861/">
+	                        		<img src="images/custom/201502041513258199.jpg" alt="True love DRW070058D" title="True love DRW070058D">
+	                        	</a>
+	                        </div>
+	                        <div class="hotstext">
+	                        	<a href="/caibao/3861/">True love</a>
+	                        </div>
+	                        <div class="hotsimgs">
+	                        	<a href="/caibao/3911/">
+	                        		<img src="images/custom/201503061132321922.jpg" alt="缘徊 DRW070119D" title="缘徊 DRW070119D">
+	                        	</a>
+	                        </div>
+	                        <div class="hotstext">
+	                        	<a href="/caibao/3911/">缘徊</a>
+	                        </div>
+	                    </div>
+	                    <div id="lookhead" class="lefthots">最近浏览记录</div>
+	                    <div id="looklist" class="hotslist">
+	                        <div class="hotsimgs">
+	                        	<a href="/caibao/4533/">
+	                        		<img src="images/custom/1.png" alt="">
+	                        	</a>
+	                        </div>
+	                        <div class="hotstext">
+	                        	<a href="/caibao/4533/">爱情手镯</a>
+	                        </div>
+	                        
+	                    </div>
+	                </div>
+	                <div class="contright">
+	                	<div class="righthead" id="producthead">
+	                        <div class="headnormal" id="productitemhead" >产品信息</div>
+	                        <div class="headnormal" id="productfuwuhead" >产品服务</div>
+	                        <div class="headnormal" id="productaskshead" >常见问题</div>
+	                    </div>
+	                    <div class="cont_box">
+	                    	<div class="product_img">
+	                    		<!--<img src="images/custom/2.jpg" alt="" />-->
+	                    	</div>
+	                    </div>
+	                </div>
 				</div>
 				
 			</div>

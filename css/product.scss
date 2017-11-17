@@ -41,12 +41,23 @@
                         height: 420px;
                     }
                     .mask{
-                        width: 351px;
-                        height: 287px;
+                        width: 247px;
+                        height: 276px;
                         border: 1px solid #D2D2D2;
                         position: absolute;
                         top: 0;
                         left: 0;
+                        display: none;
+                    }
+                    .big_box{
+                        width: 420px;
+                        height: 420px;
+                        position: absolute;
+                        left: 435px;
+                        top: 0;
+                        border: 1px solid #D2D2D2;
+                        display: none;
+                        
                     }
                 }
                 .small{
@@ -69,20 +80,23 @@
                         position: relative;
                         padding: 1px 18px;
                         ul{
-                            width: 197px;
+//                          width: 197px;
+                            height: 100px;
                             position: relative;
                             left: 0;
                             top: 0;
                             li{
-                                margin-left: 1px;
-                                margin-right: 1px;
-                                width: 95px;
-                                height: 98px;
-                                border: 1px solid #D2D2D2;
+                                float: left;
+                                margin-left: 2px;
+                                margin-right: 2px;
+                                width: 90px;
+                                height: 90px;
+                                padding:4px 1px;
+                                background: url(../images/custom/border.gif) no-repeat ;
+//                              border: 1px solid #D2D2D2;
                                 img{
                                     width: 90px;
                                     height: 90px;
-                                    
                                 }
                             }
                         }
@@ -97,6 +111,203 @@
                     }
                 }
                 
+            }
+            
+            .item_right{
+                width: 600px;
+                float: right;
+                padding: 15px 5px;
+                .list{
+                    width: 530px;
+                    height: 38px;
+                    .text{
+                        width: 100px;
+                        float: left;
+                        line-height: 38px;
+                        text-align: right;
+                    }
+                    .data{
+                        float: left;
+                        width: 430px;
+                        line-height: 38px;
+                    }
+                    
+                }
+                .bold{
+                    font-weight: 900;
+                    font-size: 14px;
+                }
+                .market{
+                    color: #888;
+                    font-size: 14px;
+                    font-weight: 900;
+                    text-decoration: line-through;
+                }
+                .price{
+                    color: #DB3962;
+                    font-size: 14px;
+                    font-weight: 900;
+                }
+                .materia{
+                    padding: 5px 10px;
+                    background: #ccc;
+                    margin-right: 8px;
+                    cursor: pointer;
+                }
+                .materiaselect{
+                    padding: 5px 10px;
+                    background: #DB3962;
+                    color: #fff;
+                    margin-right: 8px;
+                    cursor: pointer;
+                }
+                .dropdown{
+                    padding: 2px;
+                    margin-top: 8px;
+                    border: 1px solid #ccc;
+                    font-size: 14px;
+                    outline: none;
+                }
+                .diamond{
+                    color: #A00005;
+                }
+                .crave{
+                    padding: 2px;
+                    width: 80px;
+                    height: 17px;
+                    margin-right: 10px;
+                    border: 1px solid #ccc;
+                }
+                .consult{
+                    color: red;
+                }
+                .info{
+                    width: 450px;
+                    margin-top: 10px;
+                    margin-left: 40px;
+                    padding-top:10px;
+                    border-top:1px dashed #D2D2D2;
+                    .button{
+                        width: 450px;
+                        height: 60px;
+                        .addtocart_zuan{
+                            float: left;
+                            width: 227px;
+                            height: 42px;
+                            line-height: 42px;
+                            margin-top: 12px;
+                            margin-right: 12px;
+                            background: url(../images/custom/addtocart_zuan.png) no-repeat;
+                            cursor: pointer;
+                        }
+                        .addtofavor{
+                            float: left;
+                            width: 126px;
+                            height: 42px;
+                            line-height: 42px;
+                            margin-top: 12px;
+                            margin-right: 12px;
+                            background: url(../images/custom/addtofavor.png) no-repeat;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .productcont{
+            width: 1180px;
+            padding-top: 20px;
+            .contleft{
+                float: left;
+                width: 242px;
+                .lefthead{
+                    width: 240px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-indent: 10px;
+                    font-weight: 900;
+                    border: 1px solid #D2D2D2;
+                    background: url(../images/custom/listbg.gif);
+                    color: #DB3962;
+                }
+                .security{
+                    width: 240px;
+                    height: 231px;
+                    border: 1px solid #D2D2D2;
+                    border-top: 0;
+                }
+                .lefthots{
+                    margin-top: 20px;
+                    width: 240px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-indent: 10px;
+                    font-weight: 900;
+                    border: 1px solid #D2D2D2;
+                    background: url(../images/custom/listbg.gif);
+                }
+                .hotslist{
+                    width: 240px;
+                    border-left: 1px solid #D2D2D2;
+                    border-right: 1px solid #D2D2D2;
+                    .hotsimgs{
+                        padding: 5px 0;
+                        width: 240px;
+                        height: 200px;
+                        text-align: center;
+                        background: #fff;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                            border: 0;
+                        }
+                    }
+                    .hotstext{
+                        padding: 0 5px;
+                        width: 230px;
+                        height: 36px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-bottom:1px solid #D2D2D2 ;
+                        background: #fff;
+                    }
+                }
+            }
+            .contright{
+                float: right;
+                width: 910px;
+                border: 1px solid #D2D2D2;
+                background: #fff;
+                .righthead{
+                    width: 910px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    font-weight: 900;
+                    border-bottom: 1px solid #D2D2D2 ;
+                    background: url(../images/custom/listbg.gif);
+                    .headnormal{
+                        float: left;
+                        width: 100px;
+                        height: 35px;
+                        line-height: 35px;
+                        border-right: 1px solid #D2D2D2 ;
+                        cursor: pointer;
+                    }
+                }
+                .cont_box{
+                    width: 910px;
+                    .product_img{
+                        width: 712px;
+                        text-align: center;
+                        padding: 20px 45px 0 80px;
+                        img{
+                            min-height: 712px;
+                            padding: 20px;
+                        }
+                    }
+                }
             }
         }
             

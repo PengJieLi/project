@@ -1,0 +1,148 @@
+.myshop_box {
+  width: 100%;
+  padding-top: 20px;
+  background: #FEF1EF; }
+  .myshop_box .myshop {
+    width: 1180px;
+    margin: 0 auto;
+    border: 1px solid #DEDEDE;
+    background: #fff; }
+    .myshop_box .myshop .shop_line {
+      width: 1140px;
+      padding: 10px 20px 0 20px;
+      height: 40px;
+      border-top: 3px solid #FFC0C1; }
+      .myshop_box .myshop .shop_line .shophead {
+        width: 1140px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #DEDEDE;
+        font-weight: 900;
+        text-indent: 30px;
+        background: url(../images/cart/carticon.jpg) no-repeat left center; }
+    .myshop_box .myshop .shop_info {
+      width: 1140px;
+      padding: 10px 20px; }
+      .myshop_box .myshop .shop_info .headrow {
+        height: 30px;
+        line-height: 30px; }
+        .myshop_box .myshop .shop_info .headrow .img {
+          width: 110px; }
+        .myshop_box .myshop .shop_info .headrow .size {
+          width: 100px; }
+        .myshop_box .myshop .shop_info .headrow .word {
+          width: 150px; }
+        .myshop_box .myshop .shop_info .headrow .price {
+          width: 100px; }
+        .myshop_box .myshop .shop_info .headrow .action {
+          width: 100px; }
+      .myshop_box .myshop .shop_info .product {
+        background: #F7F7F7; }
+      .myshop_box .myshop .shop_info td {
+        padding: 5px;
+        text-align: center; }
+      .myshop_box .myshop .shop_info .shop_sum {
+        width: 1140px;
+        height: 40px;
+        margin: 10px 0;
+        background: #F7F7F7; }
+        .myshop_box .myshop .shop_info .shop_sum .shopsumL {
+          float: left;
+          width: 400px;
+          height: 40px;
+          line-height: 40px; }
+          .myshop_box .myshop .shop_info .shop_sum .shopsumL .gobuy {
+            margin: 0 20px;
+            color: #DB3962; }
+        .myshop_box .myshop .shop_info .shop_sum .total {
+          margin: 0 5px;
+          font-weight: 900;
+          color: #C11E1F; }
+        .myshop_box .myshop .shop_info .shop_sum .shopsumR {
+          float: right;
+          width: 740px;
+          height: 40px;
+          line-height: 40px;
+          text-align: right; }
+          .myshop_box .myshop .shop_info .shop_sum .shopsumR .btn {
+            width: 25px;
+            height: 15px;
+            text-align: center;
+            line-height: 15px;
+            color: #fff;
+            background: #C11E1F;
+            display: inline-block;
+            margin: 0 45px;
+            cursor: pointer;
+            padding: 4px 25px; }
+          .myshop_box .myshop .shop_info .shop_sum .shopsumR #totalmoney {
+            font-size: 16px; }
+
+.full {
+  width: 100%;
+  height: 100%;
+  background: #666;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  opacity: 0.5;
+  display: none; }
+
+.prompt {
+  width: 400px;
+  height: 242px;
+  border-radius: 10px;
+  background: #fff;
+  position: fixed;
+  left: 432px;
+  top: 195px;
+  z-index: 1000;
+  display: none; }
+  .prompt h3 {
+    border-radius: 10px 10px 0 0;
+    font-size: 14px;
+    font-weight: 900;
+    color: #100D0D;
+    background: #FFD9D9;
+    padding: 10px 20px;
+    border-bottom: 3px solid #A30101; }
+    .prompt h3 .close {
+      color: #A52425;
+      position: absolute;
+      right: 12px;
+      top: 5px;
+      font-size: 24px;
+      font-weight: 900; }
+  .prompt .prompt_con {
+    width: 378px;
+    line-height: 30px;
+    text-align: center;
+    padding: 50px 10px 30px 10px;
+    height: 30px; }
+  .prompt .prompt_bottom .btn_y {
+    float: left;
+    width: 90px;
+    height: 29px;
+    background: #B10101;
+    margin-left: 100px;
+    text-align: center;
+    line-height: 29px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 4px;
+    cursor: pointer; }
+  .prompt .prompt_bottom .btn_n {
+    width: 90px;
+    height: 29px;
+    background: #B10101;
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 29px;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 4px;
+    cursor: pointer; }
+
+/*# sourceMappingURL=shopcar.css.map */
