@@ -1,0 +1,106 @@
+.mainstat {
+  margin: 10px 0;
+  width: 1140px;
+  height: 40px;
+  background: #F7F7F7; }
+  .mainstat .statleft {
+    float: left;
+    width: 400px;
+    height: 40px;
+    line-height: 40px; }
+
+.mainbutn {
+  margin: 20px 0;
+  width: 1140px;
+  height: 20px;
+  text-align: right; }
+  .mainbutn .button {
+    padding: 6px 30px;
+    color: #fff;
+    border: 1px solid #CC494B;
+    background: #CC494B;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px; }
+
+.shop_main {
+  width: 1140px;
+  padding: 10px 20px; }
+  .shop_main .carthead {
+    padding-top: 5px;
+    width: 1140px;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px dashed #ccc; }
+    .shop_main .carthead .headtext {
+      width: 1140px;
+      text-align: left;
+      text-indent: 23px;
+      font-weight: 900;
+      color: #DB3962; }
+  .shop_main .cartwrap {
+    padding: 5px 0;
+    width: 1140px;
+    color: #222; }
+  .shop_main .wrapitem {
+    width: 1120px;
+    height: 30px;
+    line-height: 20px;
+    padding-left: 20px; }
+    .shop_main .wrapitem .radio {
+      position: relative;
+      top: 1px;
+      left: -2px; }
+  .shop_main .cartinfo {
+    padding: 5px 0;
+    width: 1140px; }
+    .shop_main .cartinfo .infoitem {
+      padding-left: 40px;
+      width: 1100px;
+      height: 38px;
+      line-height: 20px; }
+      .shop_main .cartinfo .infoitem .w200 {
+        width: 220px;
+        padding: 1px 3px;
+        border: 1px solid #ccc;
+        height: 24px;
+        line-height: 24px;
+        font-size: 14px; }
+      .shop_main .cartinfo .infoitem .w208 {
+        padding: 1px 1px 1px 0;
+        height: 28px;
+        line-height: 28px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        margin-right: 5px; }
+      .shop_main .cartinfo .infoitem .w500 {
+        width: 500px;
+        padding: 1px 3px;
+        border: 1px solid #ccc;
+        height: 24px;
+        line-height: 24px;
+        font-size: 14px; }
+  .shop_main .cartbank {
+    padding: 0 0 8px 23px;
+    width: 1100px; }
+    .shop_main .cartbank ul {
+      width: 1100px;
+      padding-left: 17px; }
+      .shop_main .cartbank ul li {
+        float: left;
+        height: 36px;
+        padding-top: 7px;
+        padding-left: 5px;
+        width: 175px;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin: 3px 22px 7px 0; }
+        .shop_main .cartbank ul li input {
+          position: relative;
+          top: -5px; }
+        .shop_main .cartbank ul li img {
+          display: inline-block;
+          margin-top: 4px;
+          margin-left: 4px; }
+
+/*# sourceMappingURL=confirm.css.map */

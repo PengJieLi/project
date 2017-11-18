@@ -4,11 +4,12 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		
+		<link rel="stylesheet" type="text/css" href="css/confirm.css"/>
+		<script src="js/area.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/confirm.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--top-->
@@ -118,297 +119,139 @@
 				<img src="images/phone.png" alt="" />
 			</div>
 		</div>
-		<!--banner-->
-		<div id="banner">
-			<ul>
-				<li>
-					<a href="#"></a>
-				</li>
-				<li>
-					<a href="#"></a>
-				</li>
-			</ul>
-			<ol>
-				<li><a href="#" class="active">1</a></li>
-				<li><a href="#">2</a></li>
-			</ol>
-		</div>
-		<!--homeline-->
-		<div class="homeline1">
-			<div class="left">
-				<a href="#"><img src="images/sweet.jpg" alt="" />sweet 系列产品</a>
-			</div>
-			<div class="center">
-				<a href="#"><img src="images/small20160304341049.jpg" alt="" />最新活动</a>
-			</div>
-			<div class="right">
-				<a href="#"><img src="images/agent.jpg" alt="" />招商合作</a>
-			</div>
-		</div>
-		<div class="homeline"></div>
-		<div class="homeline2">
-			<div class="leftimg">
-				<a href="#"><img src="images/leftdiamondimg.png" alt="" /></a>
-			</div>
-			<div class="rightbtn">
-				<div class="inputvalue">
-					<div class="inputcss">
-						<input type="text"  id="mincaratvalue" value="0.00" class="searchinputcss">
-					</div>
-					<div class="inputline">--</div>
-					<div class="rightinputcss">
-						<input type="text"  id="maxcaratvalue" value="10.00" class="searchinputcss">
-					</div>
-					<div class="inputtxt">克拉</div>
+		<!--main-->
+		<div class="myshop_box">
+			<div class="myshop" style="border-bottom: 0;">
+				<div class="shop_line">
+					<div class="shophead" >确认订单信息</div>
 				</div>
-				<div class="selectitem" style="margin-top:22px;margin-left:76px;">
-					<div class="imgs " id="color_2"><img src="images/1.png"></div>
-					<div class="imgs "  id="color_2"><img src="images/2.png"></div>
-					<div class="imgs "  id="color_2"><img src="images/3.png"></div>
-					<div class="imgs "  id="color_2"><img src="images/4.png"></div>
-					<div class="imgs "  id="color_2"><img src="images/5.png"></div>
-					<div class="imgs "  id="color_2"><img src="images/6.png"></div>
-					<div class="imgs "  id="color_2"><img src="images/7.png"></div>
-                    <input name="color" type="hidden" id="color" value="2">
-        		</div>
-        		<div class="selectitem">
-	                <div class="imgs" style="padding-left:0;"  id="polish_1"><img src="images/polish/1.png"></div>
-	                <div class="imgs"  id="polish_2"><img src="images/polish/1.png"></div>
-	                <div class="imgs"  id="polish_3"><img src="images/polish/2.png"></div>
-	                <div class="imgs"  id="polish_4"><img src="images/polish/3.png"></div>
-                    <input name="polish" type="hidden" id="polish" value="">
-       			</div>
-       			<div class="selectitem">
-	                <div class="imgs" style="padding-left:0;"  id="clarity_1"><img src="images/clarity/1.png"></div>
-	                <div class="imgs"  id="clarity_2"><img src="images/clarity/2.png"></div>
-	                <div class="imgs"  id="clarity_3"><img src="images/clarity/3.png"></div>
-	                <div class="imgs"  id="clarity_4"><img src="images/clarity/4.png"></div>
-	                <div class="imgs"  id="clarity_5"><img src="images/clarity/5.png"></div>
-	                <div class="imgs"  id="clarity_6"><img src="images/clarity/6.png"></div>
-	                <input name="clarity" type="hidden" id="clarity" value="">
-        		</div>
-        		<div class="selectitembtn">
-                	<div class="imgs" onclick="searchdiamondbtn();"><img src="images/searchbtn.jpg"></div>
-        		</div>
+				<div class="shop_main">
+					<div class="carthead">
+	                    <div class="headtext">收货信息</div>
+	                </div>
+					<div class="cartwrap" style="padding-top:12px;">
+	                    <div class="wrapitem"><input value="0" name="receive" type="radio" id="receive0" class="radio"  checked="checked">快递寄送（支持顺丰、邮政EMS、中通快递等）</div>
+	                </div>
+	                <div class="cartinfo" id="receiveline">
+	                    <div class="infoitem">收货人员：<input name="deliveryname" type="text" maxlength="30" id="deliveryname" class="w200"></div>
+	                     <div class="infoitem">联系地址：
+	                     	<select id="s_province" name="s_province" class="w208" style="outline: none;"></select>
+							<select id="s_city" name="s_city" class="w208" style="outline: none;"></select>
+							<select id="s_county" name="s_county" class="w208" style="outline: none;"></select>
+							<script class="resources library" src="js/area.js" type="text/javascript"></script>
+							<script type="text/javascript">
+								_init_area();//插件
+							</script>
+							<input type="text" class="w500" />
+	                     </div>
+	                    <div class="infoitem">联系电话：<input name="deliverymobile" type="text" maxlength="30" id="deliverymobile" class="w200"></div>
+	                </div>	
+	                <div class="cartwrap" style="padding-bottom:8px;"> 
+	                    <div class="wrapitem"><input value="1" name="receive" type="radio" id="receive1" class="radio" >体验中心自取（支持全国多个城市）</div>
+	                </div>
+	                <div class="cartwrap" style="padding-bottom:8px;"> 
+	                    <div class="wrapitem">留言：<textarea name="txtMemo" rows="2" cols="20" id="txtMemo" style="height:30px;width:454px;"></textarea></div>
+	                </div>
+	                <div class="cartwrap" style="padding-bottom:8px;"> 
+	                    <div class="wrapitem"><input id="txtState_Urgent" type="checkbox" name="txtState_Urgent"><label for="txtState_Urgent">是否加急</label></div>
+	                </div>
+	                <div class="shop_line" style="border-top:0 ;padding: 0;">
+						<div class="shophead" style="color: #DB3962; background: none; border-bottom: 1px dashed #DEDEDE; border-top:1px solid #ccc ;">支付信息</div>
+					</div>
+					<div class="cartwrap" style="padding-top:12px;">
+	                    <div class="wrapitem"><input value="0" name="payment" type="radio" id="payment0" class="radio"  checked="checked">在线支付（即时到帐，支持绝大数银行借记卡及部分银行信用卡）</div>
+	                </div>
+	                <div class="cartbank clearfix" id="paymentline">
+	                    <ul class="clearfix">
+	                        <!--<li style="display:none;"><input name="paymenttype" type="radio" value="ALIPAY" checked="checked" /><img src="/images/bank/zfb.png" alt="" /></li>-->
+	                        <li><input name="paymenttype" type="radio" value="WEIXIN"><img src="images/bank/weixin.jpg" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="TENPAY"><img src="images/bank/cft.gif" alt=""></li>
+	                    </ul>
+	                    <ul>
+	                        <li><input name="paymenttype" type="radio" value="ICBC_D"><img src="images/bank/10.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="CMB_D"><img src="images/bank/17.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="CCB_D"><img src="images/bank/2.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="ABC"><img src="images/bank/1.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="SPDB"><img src="images/bank/12.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="SDB"><img src="images/bank/8.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="CIB_D"><img src="images/bank/27.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="BOB"><img src="images/bank/11.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="CEB_D"><img src="images/bank/3.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="CMBC_D"><img src="images/bank/4.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="CITIC"><img src="images/bank/7.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="GDB_D"><img src="images/bank/6.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="PAB"><img src="images/bank/18.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="BOC_D"><img src="images/bank/16.gif" alt=""></li>
+	                        <li><input name="paymenttype" type="radio" value="COMM_D"><img src="images/bank/5.gif" alt=""></li>
+	                        <li class="qiye" style="display:none;"><input name="paymenttype" type="radio" value="B2B"><img src="images/bank/bank_qy.jpg" alt=""></li>
+	                    </ul>
+	                </div>
+	                <div class="wrapitem">
+	                	<input value="2" name="payment" type="radio" id="payment2" class="radio" >门店支付（您的收货地址附近有自提点，使用自主自提，更快更便捷）
+	                </div>
+				</div>
+			</div>
+			<div class="myshop" style="border-top: 0;">
+				<div class="shop_line" style="border-top:0 ;">
+					<div class="shophead" style="color: #DB3962; background: none; border-bottom: 1px dashed #DEDEDE; border-top:1px solid #ccc ;">商品信息</div>
+				</div>
+				<div class="shop_info">
+					<table cellspacing="0" cellpadding="0" id="table">
+						<tr class="headrow">
+							<td class="img">商品</td>
+							<td>型号</td>
+							<td class="size">尺寸</td>
+							<td class="word">刻字内容</td>
+							<td class="price">市场价格</td>
+							<td class="price">优惠</td>
+							<td class="price">成交价</td>
+						</tr>
+						
+						<!--<tr class="product">
+	                        <td class="img"><img width="120" height="120" src="images/custom/2.jpg" alt=""></td>
+	                        <td><a href="#" target="_blank">爱之光，材质：PT950，镶口：15-20分 DRW124517D</a></td>
+	                        <td class="size">7</td>
+	                        <td class="word">&nbsp;</td>
+	                        <td class="price" style="text-decoration:line-through;">7614.00</td>
+	                        <td class="price">3606.00</td>
+	                        <td class="price">4008.00</td>
+	                        <td class="action"><div><a href="javascript:;" >删除</a><br><a href="javascript:;">修改</a></div></td>
+	                    </tr>-->
+					</table>
+					<div class="mainstat"><!--此订单暂无可用的优惠券。-->
+	                    <div id="isuseprize" class="statleft">
+	                    	<input id="useprize" type="checkbox" name="useprize">&nbsp;使用代金劵</div>
+	                </div>
+					<div class="shop_sum">
+						<div class="shopsumL">
+							共<span class="total" id="count">0</span>件商品
+							
+						</div>
+						<div class="shopsumR">
+	                      	商品总金额 <span id="productmoney">￥0</span> - 优惠金额 <span id="discountmoney">0</span> = 订单总金额 <span id="totalmoney" class="total">0</span>
+	                    </div>
+					</div>
+					<div class="mainbutn"><span class="total" id="daijinjuan" style="display:none;"></span>应付总金额：￥<span id="totalpayment" class="total">8302.00</span>
+	                    <span class="button" >提交订单</span>
+	                </div>
+				</div>
 			</div>
 		</div>
-		<div class="homeline"></div>
-		<div class="homeline3">
-	        <div class="left">
-	            <div class="homeimgs" style="cursor:pointer;" ></div>
-	            <div class="hometype">
-	                <div><a target="_blank" href="#">女戒</a></div>
-	                <div><a target="_blank" href="#">男戒</a></div>
-	                <div><a target="_blank" href="#">对戒</a></div>
 	
-	            </div>
-	            <div class="homeprice">
-	                <div><a target="_blank" href="#">1000元以下</a></div>
-	                <div><a target="_blank" href="#">1000-1999元</a></div>
-	                <div><a target="_blank" href="#">2000-2999元</a></div>
-	                <div><a target="_blank" href="#">3000元以上</a></div>
-	            </div>
-	        </div>
-	        <div class="center"><a target="_blank" href="#"><img src="images/line3/2.jpg" alt="最爱女戒" title="最爱女戒"></a></div>
-	        <div class="right">
-	            <div class="righttop">
-	                <div class="righttopleft"><a target="_blank" href="#"><img src="images/line3/3.jpg" alt="玫瑰人生 - DRW070056D"></a></div>
-	                <div class="righttopright"><a target="_blank" href="#"><img src="images/line3/4.jpg" alt="缘徊 - DRW070119D"></a></div>
-	            </div>
-	            <div class="rightbottom">
-	                <div class="rightbottomleft"><a target="_blank" href="#"><img src="images/line3/5.jpg" alt="Merry me - DRW070059D"></a></div>
-	                <div class="rightbottomcenter"><a target="_blank" href="#"><img src="images/line3/6.jpg" alt="花眸 - DRW010077D"></a></div>
-	                <div class="rightbottomright"><a target="_blank" href="#"><img src="images/line3/7.jpg" alt="True love - DRW070058D"></a></div>
-	            </div>
-	        </div>
-    	</div>
-		<div class="homeline"></div>
-    	<div class="homeline4">
-	        <div><a target="_blank" href="#"><img src="images/line4/1.jpg" alt="白羊座 - CRD012446D"></a></div>
-	        <div><a target="_blank" href="#"><img src="images/line4/2.jpg" alt="浪漫心事 - NR0100115D"></a></div>
-	        <div><a target="_blank" href="#"><img src="images/line4/3.jpg" alt="天使之约 - DPW012185D"></a></div>
-	        <div><a target="_blank" href="#"><img src="images/line4/4.jpg" alt="火焰之心 - CPD011934D"></a></div>
-   		</div>
-		<div class="homeline"></div>
-		<div class="homeline5">
-	        <div class="left">
-	            <div class="homeimgs" style="cursor:pointer;" ></div>
-	            <div class="hometype">
-	                <div><a target="_blank" href="#">18K</a></div>
-	                <div><a target="_blank" href="#">钻石</a></div>
+		
+		
 	
-	            </div>
-	            <div class="homeprice">
-	                <div><a target="_blank" href="#">3000-5000元</a></div>
-	                <div><a target="_blank" href="#">5000元以上</a></div>
-	            </div>
-	        </div>
-	        <div class="center">
-	            <div class="centertop">
-	                <div class="centertopleft"><a target="_blank" href="#"><img src="images/line5/2.jpg" alt="just you - DCW040083D"></a></div>
-	                <div class="centertopright"><a target="_blank" href="#"><img src="images/line5/3.jpg" alt="爱侣 - DCW012627D"></a></div>
-	            </div>
-	            <div class="centerbottom">
-	                <div class="centerbottomleft"><a target="_blank" href="#"><img src="images/line5/4.jpg" alt="Forever - DCW012473D"></a></div>
-	                <div class="centerbottomcenter"><a target="_blank" href="#"><img src="images/line5/5.jpg" alt="爱的交织 - DCW012451D"></a></div>
-	                <div class="centerbottomright"><a target="_blank" href="#"><img src="images/line5/6.jpg" alt="同心缘 - DCW012571D"></a></div>
-	            </div>
-	        </div>
-	        <div class="right"><a target="_blank" href="#"><img src="images/line5/7.jpg" alt="爱旅 - DAW010117D"></a></div>
-    	</div>
-    	<div class="homeline"></div>
-    	<div class="homeline6">
-	        <div class="left">
-	            <div class="homeimgs" style="cursor:pointer;" ></div>
-	            <div class="hometype">
-	                <div><a target="_blank" href="#">碧玺</a></div>
-	
-	                <div><a target="_blank" href="#">红宝石</a></div>
-	                <div><a target="_blank" href="#">蓝宝石</a></div>
-	                <div><a target="_blank" href="#">芙蓉石</a></div>
-	          </div>
-	            <div class="homeprice">
-	                <div><a target="_blank" href="#">1000-2000元</a></div>
-	                <div><a target="_blank" href="#">2000-3000元</a></div>
-	                <div><a target="_blank" href="#">3000-5000元</a></div>
-	                <div><a target="_blank" href="#">5000元以上</a></div>
-	          </div>
-	        </div>
-	        <div class="center"><a target="_blank" href="#"><img src="images/line6/2.jpg" alt="久爱 - CRD040084D"></a></div>
-	        <div class="right">
-	            <div class="righttop">
-	                <div class="righttopleft"><a target="_blank" href="#"><img src="images/line6/3.jpg" alt="深爱 - CRD040085D"></a></div>
-	                <div class="righttopright"><a target="_blank" href="#"><img src="images/line6/4.jpg" alt="凝望 - CED040086D"></a></div>
-	            </div>
-	            <div class="rightbottom">
-	                <div class="rightbottomleft"><a target="_blank" href="#"><img src="images/line6/5.jpg" alt="提亚的优雅 - CPD011937D"></a></div>
-	                <div class="rightbottomcenter"><a target="_blank" href="#"><img src="images/line6/6.jpg" alt="依夕 - CRD012460D"></a></div>
-	                <div class="rightbottomright"><a target="_blank" href="#"><img src="images/line6/7.jpg" alt="欲放 - CRD012461D"></a></div>
-	            </div>
-	        </div>
-	    </div>
-	    <div class="homeline"></div>
-    	<div class="homeline7"><a target="_blank" href="#"><img src="images/1(3).jpg" alt="加盟商"></a></div>
-	    <div class="homeline"></div>
-    	<div class="homeline8">
-	        <div class="left">
-	            <div class="homeimgs" style="cursor:pointer;" onclick="javascript:window.open('/search.aspx?sclassno=P-E&amp;mclassno=P')"></div>
-	            <div class="hometype">
-	                <div><a target="_blank" href="#">珍珠吊坠</a></div>
-	              <div><a target="_blank" href="#">珍珠耳饰</a></div>
-	
-	            </div>
-	            <div class="homeprice">
-	                <div><a target="_blank" href="#">1000-2000元</a></div>
-	                <div><a target="_blank" href="#">2000-3000元</a></div>
-	                <div><a target="_blank" href="#">3000-5000元</a></div>
-	                <div><a target="_blank" href="#">5000元以上</a></div>
-	            </div>
-	        </div>
-	        <div class="center">
-	            <div class="centertop">
-	                <div class="centertopleft"><a target="_blank" href="#"><img src="images/line8/2.jpg" alt="典耀 - PRK102977D"></a></div>
-	                <div class="centertopright"><a target="_blank" href="#"><img src="images/line8/3.jpg" alt="满月 - PEW100095D"></a></div>
-	            </div>
-	            <div class="centerbottom">
-	                <div class="centerbottomleft"><a target="_blank" href="#"><img src="images/line8/4.jpg" alt="月韵 - PPW100091D"></a></div>
-	                <div class="centerbottomcenter"><a target="_blank" href="#"><img src="images/line8/5.jpg" alt="星意 - PPB100094D"></a></div>
-	                <div class="centerbottomright"><a target="_blank" href="#"><img src="images/line8/6.jpg" alt="星月 - PPW100093D"></a></div>
-	            </div>
-	        </div>
-	        <div class="right"><a target="_blank" href="#"><img src="images/line8/7.jpg" alt="明月 - PPW100092D"></a></div>
-	    </div>
-	    <div class="homeline"></div>
-	    <div class="homeline10">
-	        <div class="left">
-	            <div class="homeimgs" style="cursor:pointer;" ></div>
-	            <div class="hometype">
-	                <div><a target="_blank" href="#">投资金条</a></div>
-	              <div><a target="_blank" href="#">黄金饰品</a></div>
-	
-	            </div>
-	            <div class="homeprice">
-	                <div><a target="_blank" href="#">1000元以下</a></div>
-	                <div><a target="_blank" href="#">1000-1999元</a></div>
-	                <div><a target="_blank" href="#">2000-2999元</a></div>
-	                <div><a target="_blank" href="#">3000元以上</a></div>
-	            </div>
-	        </div>
-	        <div class="center">
-	            <div class="centertop">
-	                <div class="centertopleft"><a target="_blank" href="#"><img src="images/line10/2.jpg" alt="3D黄金吉祥福袋 - GZX092988I"></a></div>
-	                <div class="centertopright"><a target="_blank" href="#"><img src="images/line10/3.jpg" alt="3D黄金长命锁吊坠 - GPX092988I"></a></div>
-	            </div>
-	            <div class="centerbottom">
-	                <div class="centerbottomleft"><a target="_blank" href="#"><img src="images/line10/4.jpg" alt="3D黄金锁吊坠 - GPX12I"></a></div>
-	                <div class="centerbottomcenter"><a target="_blank" href="#"><img src="images/line10/5.jpg" alt="3D黄金钥匙吊坠 - GPX092988I"></a></div>
-	                <div class="centerbottomright"><a target="_blank" href="#"><img src="images/line10/6.jpg" alt="3D黄金小房子转运珠、 - GZX12I"></a></div>
-	            </div>
-	        </div>
-	        <div class="right"><a target="_blank" href="#"><img src="images/line10/7.jpg" alt="3D黄金福羊羊吊坠 - GPX092988I"></a></div>
-	    </div>
-	    <div class="homeline"></div>
-	    <div class="homeline9">
-	        <div class="linewrap">
-	            <div class="wraphead"><a href="/baike/" target="_blank">最新资讯</a></div>
-	            <div class="wrapmain">
-	                <div class="mainimg"><img src="images/line9/1.jpg" alt=""></div>
-	                <div class="maintext">
-	                    
-	                    <div>· <a target="_blank" href="/baike/8778/">美国女子商店买蛤蜊吃出罕见紫色珍珠</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8777/">世界最大蓝宝石现身斯里兰卡</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8773/">黄金首饰材料的分类</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8771/">关于蓝宝石不得不知的五个常识</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8770/">订婚戒指和结婚戒指的区别</a></div>
-	                    
-	                </div>
-	            </div>
-	        </div>
-	        <div class="linewrap">
-	            <div class="wraphead"><a href="/baike/wiki27/1/" target="_blank">钻石百科</a></div>
-	            <div class="wrapmain">
-	                <div class="mainimg"><img src="images/line9/2.jpg" alt=""></div>
-	                <div class="maintext">
-	                      
-	                    <div>· <a target="_blank" href="/baike/8776/">低净度高性价比钻石挑选技巧</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8775/">如何才能保证钻石不脱落</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8772/">异形公主方形钻石知识了解</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8767/">钻石怎么保养能延长寿命？</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8763/">挑选好钻石的方法技巧</a></div>
-	                    
-	                </div>
-	            </div>
-	        </div>
-	        <div class="linewrap">
-	            <div class="wraphead"><a href="/baike/wiki121/1/" target="_blank">婚嫁百科</a></div>
-	            <div class="wrapmain">
-	                <div class="mainimg"><img src="images/line9/3.jpg" alt=""></div>
-	                <div class="maintext">
-	                      
-	                    <div>· <a target="_blank" href="/baike/8759/">结婚买多大的钻戒比较合适？</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8691/">钻石婚戒的挑选 最重要的不在于品牌</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8677/">订婚戒指和结婚戒指的区别</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8676/">订婚戒指戴哪个手指 订婚戒指怎么戴</a></div>
-	                    
-	                    <div>· <a target="_blank" href="/baike/8663/">求婚钻戒品牌排行榜 2015求婚钻戒品牌排行榜</a></div>
-	                    
-	                </div>
-	            </div>
-	        </div>
-	        <div class="lineads"><a href="/search.aspx?key=花&amp;page=2" target="_blank"><img src="images/line9/4.jpg" alt="花" border="0"></a></div>
-	    </div>
-	    <div class="homeline"></div>
+		<!--<div class="prompt_del prompt">
+			<h3>操作提示
+				<a href="#" class="close" style="right: 12px; top: 5px;">×</a>
+			</h3>
+			<div class="prompt_con">确定要删除珍宝箱的商品吗？</div>
+			<div class="prompt_bottom clearfix">
+				<div class="btn_yd">确定</div>
+				<div class="btn_nd">取消</div>
+			</div>
+		</div>-->
+		
 		<!--message-->
 		<div id="message">
 			<div class="messagetop">
@@ -650,3 +493,4 @@
         
 	</body>
 </html>
+

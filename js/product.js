@@ -5,6 +5,9 @@ $(function(){
 	var str=location.href;//http://127.0.0.1:8020/WWW/project/product.html?pid=1
 	var arr=str.split("?");
 	var brr=arr[1].split("=");
+	if(!brr[1]){
+		return ;
+	}
 //	console.log(brr[1]);
 	$.ajax({
 		type:"get",
@@ -122,25 +125,38 @@ $(function(){
 		$("body,html").scrollTop(t);
 	})
 	//点击按钮addtocart_zuan 加入珠宝箱
-	var narr=[];
-	var index=0;
-	$(".addtocart_zuan").click(function(){
-		var cz=$(".materiaselect").html();
-		var weight=$("#selectzweight option:selected").text();
-		var sc=$("#ringsize option:selected").text();
-		var kz=$("#carveword").val();
-		var id=parseInt(brr[1]);
-		var json={
-			"id":id,
-			"caizhi":cz,
-			"weight":weight,
-			"shoucun":sc,
-			"kezi":kz,
-			"count":narr.length+1,
-			"index":index++
+		var narr=[];
+		if(getCookie("shuzu")){
+			var cstr=getCookie("shuzu");
+			narr.push(cstr)
+			console.log(cstr)
 		}
-		narr.push(json);
-		setCookie("product",JSON.stringify(narr));
-	})
+		var index=0;
+		$(".addtocart_zuan").click(function(){
+			var cz=$(".materiaselect").html();
+			var weight=$("#selectzweight option:selected").text();
+			var sc=$("#ringsize option:selected").text();
+			var kz=$("#carveword").val();
+			var id=parseInt(brr[1]);
+			var json={
+				"id":id,
+				"caizhi":cz,
+				"weight":weight,
+				"shoucun":sc,
+				"kezi":kz,
+				"count":narr.length+1,
+				"index":index++
+			}
+			narr.push(json);
+			
+			
+			setCookie("product",JSON.stringify(narr));
+			setCookie("shuzu",JSON.stringify(narr));
+			location.href="index.html";
+		})
+		
+	
+	
+	
 })
 

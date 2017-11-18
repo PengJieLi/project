@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/forget.css"/>
+		<link rel="stylesheet" type="text/css" href="css/user.css"/>
 		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<script src="../cookie.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/forget.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/user.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--top-->
@@ -118,55 +118,194 @@
 				<img src="images/phone.png" alt="" />
 			</div>
 		</div>
-		
-		
-
-			
-		<!--forget-->
-		<div class="forget_box">
-			<div class="forget">
-				<div class="forget_top">
-					<div class="forget_num">
-						<div>
-							<div class="phone">手机号码：</div>
-							<input type="text" placeholder="11位数字" class="iphone"/>
-						</div>
-						<p id="i1"></p>
-					</div>
-					<div class="forget_message">
-						<div>
-							<div class="mess">短信验证：</div>
-							<input type="text" placeholder="6位数字" class="note"/>
-						</div>
-						<p id="i2"></p>
-					</div>
-					<div class="reset_pwd">
-						<div>
-							<div class="rz_pwd">重置密码：</div>
-							<input type="text" placeholder="6-20位必须包含字母和数字" class="cpwd"/>
-						</div>
-						<p id="i3"></p>
-					</div>
-					<div class="affirm_pwd">
-						<div>
-							<div class="qr_pwd">确认密码：</div>
-							<input type="text" placeholder="6-20位必须包含字母和数字" class="qpwd"/>
-						</div>
-						<p id="i4"></p>
-					</div>
-					<div class="forgetsubmit">下&nbsp;&nbsp;一&nbsp;&nbsp;步</div>
+		<!--banner-->
+		<div class="banner">
+			<a href="#"><img src="images/user/banner.jpg" alt="" /></a>
+		</div>
+		<!--user-->
+		<div class="user_con clearfix">
+			<div class="user_left">
+				<div class="lefthead">
+					<a href="#" style="color: #e13a68; font-size: 14px;"> 会员中心</a>
 				</div>
-				<div class="success">
-					<div class="lock"></div>
-					<div class="t">新密码设置成功，请您牢记新密码</div>
-					<div class="b">
-						<div class="shop">立即购物</div>
-						<div class="my_box">我的珠宝箱</div>
+				<div class="leftlist">
+					<a href="#" style="font-size: 14px;">交易中心</a>
+				</div>
+				<div class="leftwrap">
+					<div class="leftitem">
+						<a href="#">我的订单</a>
 					</div>
+					<div class="leftitem">
+						<a href="#">我的珠宝箱</a>
+					</div>
+					<div class="leftitem">
+						<a href="#">我的收藏</a>
+					</div>
+					<div class="leftitem">
+						<a href="#">我的代金券</a>
+					</div>
+					<div class="leftitem">
+						<a href="#">返修申请</a>
+					</div>
+					<div class="leftitem">
+						<a href="#">积分换购</a>
+					</div>
+				</div>
+				<div class="leftlist">
+					<a href="#" style="font-size: 14px;">会员中心</a>
+				</div>
+				<div class="leftwrap">
+					<div class="leftitem">
+						<a href="#">个人信息</a>
+					</div>
+					<div class="leftitem">
+						<a href="#">修改密码</a>
+					</div>
+					<div class="leftitem">
+						<a href="#">收货地址</a>
+					</div>
+					<div class="leftitem">
+						<a href="#">我的积分</a>
+					</div>
+				</div>
+				<div class="leftads">
+					<a href="#"><img src="images/custom/li1.jpg" alt="" /></a>
+				</div>
+				<div class="leftads">
+					<a href="#"><img src="images/custom/li2.jpg" alt="" /></a>
+				</div>
+				<div class="leftads">
+					<a href="#"><img src="images/custom/li3.jpg" alt="" /></a>
 				</div>
 			</div>
-			
+			<div class="user_right">
+				<div class="userwrap">
+					<div class="userhome">
+						<div class="homeleft">
+							<div class="logowrap">
+								<img src="images/cart/logobg.png" alt="" />
+							</div>
+							<div class="logintext">
+								<span>尊敬的会员 <b style="font-weight: 900;">111111</b></span><br />
+								<span style="color: #DB3962;">戴欧妮珠宝欢迎您</span><br />
+								<span><a href="#">退出</a></span>
+							</div>
+						</div>
+						<div class="homeright">
+							<div class="stattop">
+	                            <div class="statitem">珠宝箱</div>
+	                            <div class="statitem">代金券</div>
+	                            <div class="statitem">可用积分</div>
+	                            <div class="statitem">帐户余额</div>
+	                        </div>
+	                        <div class="statbottom">
+	                            <div class="statitem"><a href="/cart/" target="_blank">
+	                                <span id="userhomecartnumber" class="num">2</span>
+	                                <span class="unit">件</span>
+	                            </a></div>
+	                            <div class="statitem"><span id="userprizecount">0</span>张</div>
+	                            <div class="statitem"><span id="userhomepointamount" class="num">0</span>
+	                            <span class="unit">分</span></div>
+	                            <div class="statitem" style="border-right:none;"><span id="userhomemoneyamount" class="num">0.00</span>
+	                            <span class="unit">元</span></div>
+	                        </div>
+						</div>
+					</div>
+					<div class="userinfo">
+	                    <div class="orderflag">
+	                        <div class="flagleft">我的订单</div>
+	                        <div class="flagright">更多</div>
+	                    </div>
+	                    <div class="homeshop">
+	                    	<a href="/">
+	                    		<img src="images/user/noshopping.jpg" alt="">
+	                    	</a>
+	                    </div>
+	                </div>
+	                <div class="favorlook">
+	                	<div class="favorwrap">
+		                	<div class="lookflag">
+	                            <div class="flagleft">最近收藏</div>
+	                        </div>
+		                	<div class="prodwrap clearfix">
+		                		<div class="mainleft" id="sleft"></div>
+		                		<div class="maincenter">
+		                			<ul class="s_ul">
+		                				<li>
+		                					<a href="#"><img src="images/custom/2.jpg" alt="" /></a>
+		                					<div class="itemname">爱之光</div>
+		                				</li>
+		                				<li>
+		                					<a href="#"><img src="images/custom/3.jpg" alt="" /></a>
+		                					<div class="itemname">爱之光</div>
+		                				</li><li>
+		                					<a href="#"><img src="images/custom/4.jpg" alt="" /></a>
+		                					<div class="itemname">爱之光</div>
+		                				</li><li>
+		                					<a href="#"><img src="images/custom/5.jpg" alt="" /></a>
+		                					<div class="itemname">爱之光</div>
+		                				</li><li>
+		                					<a href="#"><img src="images/custom/6.jpg" alt="" /></a>
+		                					<div class="itemname">爱之光</div>
+		                				</li>
+		                			</ul>
+		                		</div>
+		                		<div class="mainright" id="sright"></div>
+		                	</div>
+	                	</div>
+	                	<div class="lookwrap">
+	                        <div class="lookflag">
+	                            <div class="flagleft">最近浏览</div>
+	                        </div>
+	                        <div class="prodwrap">
+	                            
+	                            <div class="looknone">您暂时还没有浏览商品</div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="userinfo">
+	                    <div class="orderflag">
+	                        <div class="flagleft">热门推荐</div>
+	                    </div>
+	                </div>
+	                <div class="userhots clearfix">
+	                	<div class="wrapmain">
+		                	<div class="mainleft" id="bleft"></div>
+		                	<div class="maincenter">
+		                		<ul class="clearfix b_ul">
+		                			<li>
+		                				<img src="images/cart/FR-8039-0.jpg" alt="" />
+		                				<div class="itemname">永恒之心</div>
+		                			</li>
+		                			<li>
+		                				<img src="images/cart/PR-8500-0.jpg" alt="" />
+		                				<div class="itemname">爱上爱</div>
+		                			</li>
+		                			<li>
+		                				<img src="images/cart/FR-9717-0.jpg" alt="" />
+		                				<div class="itemname">樱桃眷</div>
+		                			</li>
+		                			<li>
+		                				<img src="images/cart/CF-0111-0.jpg" alt="" />
+		                				<div class="itemname">柔情似水</div>
+		                			</li>
+		                			<li>
+		                				<img src="images/cart/FR-2314-0.jpg" alt="" />
+		                				<div class="itemname">宠爱</div>
+		                			</li>
+		                		</ul>
+		                	</div>
+		                	<div class="mainright" id="bright"></div>
+	                	</div>
+	                </div>
+				</div>
+			</div>
 		</div>
+		
+		
+		
+			
+			
 		<div class="security"></div>
 		<!--footer-->
 		<div class="shouhou_box">
