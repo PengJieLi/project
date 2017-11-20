@@ -8,6 +8,7 @@ $(function(){
 	var nstr=getCookie("product");
 	var arr=JSON.parse(nstr);
 //	arr.push(nstr)
+	console.log(arr)
 	var str="";
 	$.ajax({
 		type:"get",

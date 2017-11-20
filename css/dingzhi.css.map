@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,OAAO;EACH,KAAK,EAAC,IAAI;EACV,MAAM,EAAE,KAAK;;AAKjB,aAAa;EACT,KAAK,EAAE,MAAM;EACb,MAAM,EAAC,MAAM;EAET,iCAAU;IACN,KAAK,EAAE,IAAI;EAEf,0BAAG;IACC,KAAK,EAAE,MAAM;IACb,MAAM,EAAE,KAAK",
+"sources": ["dingzhi.scss"],
+"names": [],
+"file": "dingzhi.css"
+}

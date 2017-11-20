@@ -9,48 +9,7 @@
     height: 100%; }
 
 /*user*/
-.user_con {
-  padding: 20px 0;
-  width: 1180px;
-  margin: 0 auto; }
-  .user_con .user_left {
-    width: 200px;
-    float: left; }
-    .user_con .user_left .lefthead {
-      width: 198px;
-      height: 34px;
-      line-height: 34px;
-      border: 1px solid #DFDFDF;
-      text-indent: 15px;
-      color: #DB3962;
-      font-weight: 900;
-      background: url(../images/user/headbg.png); }
-    .user_con .user_left .leftlist {
-      width: 198px;
-      height: 34px;
-      line-height: 34px;
-      border-left: 1px solid #DFDFDF;
-      border-right: 1px solid #DFDFDF;
-      border-bottom: 1px dashed #DFDFDF;
-      text-indent: 25px;
-      font-weight: 900;
-      background: #F5F5F5; }
-    .user_con .user_left .leftwrap {
-      width: 198px;
-      padding: 5px 0;
-      border: 1px solid #DFDFDF;
-      border-top: 0; }
-      .user_con .user_left .leftwrap .leftitem {
-        padding-left: 25px;
-        width: 170px;
-        height: 30px;
-        line-height: 30px; }
-    .user_con .user_left .leftads {
-      width: 198px;
-      border: 1px solid #DFDFDF;
-      margin-top: 10px; }
-      .user_con .user_left .leftads img {
-        width: 200px; }
+
   .user_con .user_right {
     width: 950px;
     float: right;

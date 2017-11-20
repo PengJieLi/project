@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/user.css"/>
-		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/personage.css"/>-->
+		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/user.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/changepwd.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--top-->
@@ -119,7 +119,7 @@
 			</div>
 		</div>
 		<!--banner-->
-		<div class="banner">
+		<div class="banner1">
 			<a href="#"><img src="images/user/banner.jpg" alt="" /></a>
 		</div>
 		<!--user-->
@@ -156,7 +156,7 @@
 				</div>
 				<div class="leftwrap">
 					<div class="leftitem">
-						<a href="personage.html">个人信息</a>
+						<a href="#">个人信息</a>
 					</div>
 					<div class="leftitem">
 						<a href="changepwd.html">修改密码</a>
@@ -178,129 +178,41 @@
 					<a href="#"><img src="images/custom/li3.jpg" alt="" /></a>
 				</div>
 			</div>
-			<div class="user_right">
+			<div class="user_right" >
 				<div class="userwrap">
-					<div class="userhome">
-						<div class="homeleft">
-							<div class="logowrap">
-								<img src="images/cart/logobg.png" alt="" />
-							</div>
-							<div class="logintext">
-								<span>尊敬的会员 <b style="font-weight: 900;" class="b_uname"></b></span><br />
-								<span style="color: #DB3962;">戴欧妮珠宝欢迎您</span><br />
-								<span><a href="#">退出</a></span>
-							</div>
-						</div>
-						<div class="homeright">
-							<div class="stattop">
-	                            <div class="statitem">珠宝箱</div>
-	                            <div class="statitem">代金券</div>
-	                            <div class="statitem">可用积分</div>
-	                            <div class="statitem">帐户余额</div>
-	                        </div>
-	                        <div class="statbottom">
-	                            <div class="statitem"><a href="/cart/" target="_blank">
-	                                <span id="userhomecartnumber" class="num">0</span>
-	                                <span class="unit">件</span>
-	                            </a></div>
-	                            <div class="statitem"><span id="userprizecount">0</span>张</div>
-	                            <div class="statitem"><span id="userhomepointamount" class="num">0</span>
-	                            <span class="unit">分</span></div>
-	                            <div class="statitem" style="border-right:none;"><span id="userhomemoneyamount" class="num">0.00</span>
-	                            <span class="unit">元</span></div>
-	                        </div>
-						</div>
-					</div>
-					<div class="userinfo">
-	                    <div class="orderflag">
-	                        <div class="flagleft">我的订单</div>
-	                        <div class="flagright">更多</div>
-	                    </div>
-	                    <div class="homeshop">
-	                    	<a href="/">
-	                    		<img src="images/user/noshopping.jpg" alt="">
-	                    	</a>
-	                    </div>
-	                </div>
-	                <div class="favorlook">
-	                	<div class="favorwrap">
-		                	<div class="lookflag">
-	                            <div class="flagleft">最近收藏</div>
-	                        </div>
-		                	<div class="prodwrap clearfix">
-		                		<div class="mainleft" id="sleft"></div>
-		                		<div class="maincenter">
-		                			<ul class="s_ul">
-		                				<!--<li>
-		                					<a href="#"><img src="images/custom/2.jpg" alt="" /></a>
-		                					<div class="itemname">爱之光</div>
-		                				</li>
-		                				<li>
-		                					<a href="#"><img src="images/custom/3.jpg" alt="" /></a>
-		                					<div class="itemname">爱之光</div>
-		                				</li><li>
-		                					<a href="#"><img src="images/custom/4.jpg" alt="" /></a>
-		                					<div class="itemname">爱之光</div>
-		                				</li><li>
-		                					<a href="#"><img src="images/custom/5.jpg" alt="" /></a>
-		                					<div class="itemname">爱之光</div>
-		                				</li><li>
-		                					<a href="#"><img src="images/custom/6.jpg" alt="" /></a>
-		                					<div class="itemname">爱之光</div>
-		                				</li>-->
-		                			</ul>
-		                		</div>
-		                		<div class="mainright" id="sright"></div>
-		                	</div>
-	                	</div>
-	                	<div class="lookwrap">
-	                        <div class="lookflag">
-	                            <div class="flagleft">最近浏览</div>
-	                        </div>
-	                        <div class="prodwrap">
-	                            
-	                            <div class="looknone">您暂时还没有浏览商品</div>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="userinfo">
-	                    <div class="orderflag">
-	                        <div class="flagleft">热门推荐</div>
-	                    </div>
-	                </div>
-	                <div class="userhots clearfix">
-	                	<div class="wrapmain">
-		                	<div class="mainleft" id="bleft"></div>
-		                	<div class="maincenter">
-		                		<ul class="clearfix b_ul">
-		                			<li>
-		                				<img src="images/cart/FR-8039-0.jpg" alt="" />
-		                				<div class="itemname">永恒之心</div>
-		                			</li>
-		                			<li>
-		                				<img src="images/cart/PR-8500-0.jpg" alt="" />
-		                				<div class="itemname">爱上爱</div>
-		                			</li>
-		                			<li>
-		                				<img src="images/cart/FR-9717-0.jpg" alt="" />
-		                				<div class="itemname">樱桃眷</div>
-		                			</li>
-		                			<li>
-		                				<img src="images/cart/CF-0111-0.jpg" alt="" />
-		                				<div class="itemname">柔情似水</div>
-		                			</li>
-		                			<li>
-		                				<img src="images/cart/FR-2314-0.jpg" alt="" />
-		                				<div class="itemname">宠爱</div>
-		                			</li>
-		                		</ul>
-		                	</div>
-		                	<div class="mainright" id="bright"></div>
-	                	</div>
-	                </div>
+					<div class="infohead">修改密码</div>
+					<div class="infoitem" style="margin-top:20px;">
+                        <div class="itemleft">原始密码:</div>
+                        <div class="itemright">
+                            <input  type="text"  id="opwd" class="w200">
+                        </div>
+                    </div>
+               		<div class="infoitem" >
+                        <div class="itemleft">新设密码:</div>
+                        <div class="itemright">
+                            <input  type="text"  id="npwd" class="w200">
+                        </div>
+                    </div>
+                    <div class="infoitem" >
+                        <div class="itemleft">确认密码:</div>
+                        <div class="itemright">
+                            <input  type="text"  id="rpwd" class="w200">
+                        </div>
+                    </div>
+                    <div class="infobutn">
+                        <input type="submit" name="submitbutton" value="提交保存" id="submitbutton" class="buttonsave">
+                        <input type="reset" id="resetbutton" value="重置信息" class="buttonreset">
+                    </div>
+			        
 				</div>
 			</div>
 		</div>
+        <div class="mask"></div>
+        <div class="update">
+        	<h3>修改提示 <a href="javascript:;" class="up_close">×</a></h3>
+        	<div class="up_hint">zz</div>
+        	<div class="up_btn">确定</div>
+        </div>
 		
 		
 		

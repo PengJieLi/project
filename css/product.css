@@ -250,10 +250,12 @@
           width: 910px; }
           .product_box .product .productcont .contright .cont_box .product_img {
             width: 712px;
+            min-height: 712px;
             text-align: center;
             padding: 20px 45px 0 80px; }
             .product_box .product .productcont .contright .cont_box .product_img img {
-              min-height: 712px;
+              /*min-height: 712px;*/
+              width: 713px;
               padding: 20px; }
 
 /*# sourceMappingURL=product.css.map */

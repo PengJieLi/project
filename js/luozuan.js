@@ -7,7 +7,6 @@ $(function(){
 		success:function(msg){
 			var arr=msg.list;
 			var str="";
-			
 			for(var i=0;i<arr.length;i++){
 				str+=`<div class="listitem" id="listwrap_216306177">
 						<div class="itembox">
@@ -52,15 +51,14 @@ $(function(){
 					}else{
 						zflag=(zsh==arr[i].zhengshuhao);
 					}
-					if($(".ss")){
+					if($(".ss").html()){
 						xflag=($(".ss").html()==arr[i].xingzhuang)
 					}else{
 						xflag=true;
 					}
 					
 					
-					
-					if(sweight<arr[i].weight&&bweight>arr[i].weight&&zflag&&xflag){
+					if(sweight<=arr[i].weight&&bweight>=arr[i].weight&&zflag&&xflag){
 						nstr+=`<div class="listitem" id="listwrap_216306177">
 							<div class="itembox">
 								<img src="images/luozuan/${arr[i].shape}" alt="圆形">

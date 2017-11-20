@@ -21,7 +21,7 @@ $(function(){
 				if(brr[1]==msg[i].id){
 //					console.log(msg[i].src[0])
 					$(".large").find("img").attr("src","images/custom/"+msg[i].src[0]);
-					$(".big_box").css("background-image","url(images/custom/"+msg[i].src[0]+")");
+					$(".big_box").css("background","url(images/custom/"+msg[i].src[0]+") no-repeat");
 //					$(".large").html("<img src='images/custom/"+msg[i].src[0]+"' alt='' >")
 					for(var j=0;j<msg[i].src.length;j++){
 						listr+=`<li><img src="images/custom/${msg[i].src[j]}" alt="" /></li>`;
@@ -30,11 +30,38 @@ $(function(){
 					$(".bold").html(msg[i].name+"-"+msg[i].num);
 					$("#itemmarket").html(msg[i].oprice);
 					$("#itemprice").html(msg[i].nprice);
+					//添加收藏的cookie
+					var collect={
+						"id":parseInt(brr[1]),
+						"src":msg[i].src[0],
+						"name":msg[i].name
+					}
 				}
 				
 			}
 			$("#imglist").html(listr);//ul 里的图片
 			$(".product_img").html(imgstr);
+			//加入收藏
+			if(!getCookie("collect")){
+				 collectarr=new Array();
+			}else{
+				collectarr=JSON.parse(getCookie("collect"));
+			}
+			$(".addtofavor").click(function(){
+				$(".mask_all").show();
+				$(".update").show().css({
+					"position": "fixed",
+				    "left": 0,
+				    "top": 0,
+				    "right": 0,
+				    "bottom": 0,
+				    "margin": "auto"
+				});
+				//存入collect  cookie
+				collectarr.push(collect)
+				setCookie("collect",JSON.stringify(collectarr))
+				
+			})
 		}
 	});
 	
@@ -65,7 +92,7 @@ $(function(){
 		//点击小图换中图
 		var imgsrc=$(this).find("img").attr("src")
 		$(".large").find("img").attr("src",imgsrc);
-		$(".big_box").css("background-image","url("+imgsrc+")");
+		$(".big_box").css("background","url("+imgsrc+") no-repeat");
 //		console.log($(".big_box").css("background-image"))
 	})
 	//点击变色materia
@@ -125,35 +152,64 @@ $(function(){
 		$("body,html").scrollTop(t);
 	})
 	//点击按钮addtocart_zuan 加入珠宝箱
-		var narr=[];
-		if(getCookie("shuzu")){
-			var cstr=getCookie("shuzu");
-			narr.push(cstr)
-			console.log(cstr)
+	if(getCookie("product")){
+		 narr=JSON.parse(getCookie("product")) ;
+		 index=narr[narr.length-1].index+1;
+	/*	 console.log(narr)
+		 console.log(index)*/
+	}else{
+		 narr=new Array();
+		 index=0;
+	}
+	$(".addtocart_zuan").click(function(){
+		var cz=$(".materiaselect").html();
+		var weight=$("#selectzweight option:selected").text();
+		var sc=$("#ringsize option:selected").text();
+		var kz=$("#carveword").val();
+		var id=parseInt(brr[1]);
+		var json={
+			"id":id,
+			"caizhi":cz,
+			"weight":weight,
+			"shoucun":sc,
+			"kezi":kz,
+			"index":index++
 		}
-		var index=0;
-		$(".addtocart_zuan").click(function(){
-			var cz=$(".materiaselect").html();
-			var weight=$("#selectzweight option:selected").text();
-			var sc=$("#ringsize option:selected").text();
-			var kz=$("#carveword").val();
-			var id=parseInt(brr[1]);
-			var json={
-				"id":id,
-				"caizhi":cz,
-				"weight":weight,
-				"shoucun":sc,
-				"kezi":kz,
-				"count":narr.length+1,
-				"index":index++
-			}
-			narr.push(json);
-			
-			
-			setCookie("product",JSON.stringify(narr));
-			setCookie("shuzu",JSON.stringify(narr));
-			location.href="index.html";
-		})
+		narr.push(json);//[1,2,3]
+		setCookie("product",JSON.stringify(narr));
+		location.href="index.html";
+	})
+	
+	$(window).resize(function(){
+		var w=parseInt($(window).outerWidth());
+		var h=parseInt($(window).outerHeight());
+		$(".update").stop().animate({
+			"left":w/2,
+			"top":h/2,
+			"margin-left":"-200px",
+			"margin-top":"-121px"
+		},500)
+	});
+	//点击up_close关闭
+	$(".up_close").click(function(){
+		$(".mask_all").hide();
+		$(".update").animate({
+			"margin-top":"-300px"
+		},200,function(){
+			$(".update").hide()
+		});
+	});
+	//确定按钮
+	$(".up_btn").click(function(){
+		$(".mask_all").hide();
+		$(".update").animate({
+			"margin-top":"-300px"
+		},200,function(){
+			$(".update").hide()
+		});
+	});
+
+		
 		
 	
 	
