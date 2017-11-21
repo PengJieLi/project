@@ -4,12 +4,11 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/confirm.css"/>
-		<script src="js/area.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/submit.css"/>
 		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../cookie.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/confirm.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/submit.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--top-->
@@ -120,138 +119,67 @@
 			</div>
 		</div>
 		<!--main-->
-		<div class="myshop_box">
-			<div class="myshop" style="border-bottom: 0;">
-				<div class="shop_line">
-					<div class="shophead" >确认订单信息</div>
-				</div>
-				<div class="shop_main">
-					<div class="carthead">
-	                    <div class="headtext">收货信息</div>
-	                </div>
-					<div class="cartwrap" style="padding-top:12px;">
-	                    <div class="wrapitem"><input value="0" name="receive" type="radio" id="receive0" class="radio"  checked="checked">快递寄送（支持顺丰、邮政EMS、中通快递等）</div>
-	                </div>
-	                <div class="cartinfo" id="receiveline">
-	                    <div class="infoitem">收货人员：<input name="deliveryname" type="text" maxlength="30" id="deliveryname" class="w200"></div>
-	                     <div class="infoitem">联系地址：
-	                     	<select id="s_province" name="s_province" class="w208" style="outline: none;"></select>
-							<select id="s_city" name="s_city" class="w208" style="outline: none;"></select>
-							<select id="s_county" name="s_county" class="w208" style="outline: none;"></select>
-							<script class="resources library" src="js/area.js" type="text/javascript"></script>
-							<script type="text/javascript">
-								_init_area();//插件
-							</script>
-							<input type="text" class="w500" />
-	                     </div>
-	                    <div class="infoitem">联系电话：<input name="deliverymobile" type="text" maxlength="30" id="deliverymobile" class="w200"></div>
-	                </div>	
-	                <div class="cartwrap" style="padding-bottom:8px;"> 
-	                    <div class="wrapitem"><input value="1" name="receive" type="radio" id="receive1" class="radio" >体验中心自取（支持全国多个城市）</div>
-	                </div>
-	                <div class="cartwrap" style="padding-bottom:8px;"> 
-	                    <div class="wrapitem">留言：<textarea name="txtMemo" rows="2" cols="20" id="txtMemo" style="height:30px;width:454px;"></textarea></div>
-	                </div>
-	                <div class="cartwrap" style="padding-bottom:8px;"> 
-	                    <div class="wrapitem"><input id="txtState_Urgent" type="checkbox" name="txtState_Urgent"><label for="txtState_Urgent">是否加急</label></div>
-	                </div>
-	                <div class="shop_line" style="border-top:0 ;padding: 0;">
-						<div class="shophead" style="color: #DB3962; background: none; border-bottom: 1px dashed #DEDEDE; border-top:1px solid #ccc ;">支付信息</div>
-					</div>
-					<div class="cartwrap" style="padding-top:12px;">
-	                    <div class="wrapitem"><input value="0" name="payment" type="radio" id="payment0" class="radio"  checked="checked">在线支付（即时到帐，支持绝大数银行借记卡及部分银行信用卡）</div>
-	                </div>
-	                <div class="cartbank clearfix" id="paymentline">
-	                    <ul class="clearfix pay_type1">
-	                        <!--<li style="display:none;"><input name="paymenttype" type="radio" value="ALIPAY" checked="checked" /><img src="/images/bank/zfb.png" alt="" /></li>-->
-	                        <li><input name="paymenttype" type="radio" value="WEIXIN" ><img src="images/bank/weixin.jpg" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="TENPAY"><img src="images/bank/cft.gif" alt=""></li>
-	                    </ul>
-	                    <ul class="clearfix pay_type2">
-	                        <li><input name="paymenttype" type="radio" value="ICBC_D"><img src="images/bank/10.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="CMB_D"><img src="images/bank/17.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="CCB_D"><img src="images/bank/2.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="ABC"><img src="images/bank/1.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="SPDB"><img src="images/bank/12.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="SDB"><img src="images/bank/8.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="CIB_D"><img src="images/bank/27.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="BOB"><img src="images/bank/11.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="CEB_D"><img src="images/bank/3.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="CMBC_D"><img src="images/bank/4.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="CITIC"><img src="images/bank/7.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="GDB_D"><img src="images/bank/6.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="PAB"><img src="images/bank/18.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="BOC_D"><img src="images/bank/16.gif" alt=""></li>
-	                        <li><input name="paymenttype" type="radio" value="COMM_D"><img src="images/bank/5.gif" alt=""></li>
-	                        <li class="qiye" style="display:none;"><input name="paymenttype" type="radio" value="B2B"><img src="images/bank/bank_qy.jpg" alt=""></li>
-	                    </ul>
-	                </div>
-	                <div class="wrapitem">
-	                	<input value="2" name="payment" type="radio" id="payment2" class="radio" >门店支付（您的收货地址附近有自提点，使用自主自提，更快更便捷）
-	                </div>
-				</div>
-			</div>
-			<div class="myshop" style="border-top: 0;">
-				<div class="shop_line" style="border-top:0 ;">
-					<div class="shophead" style="color: #DB3962; background: none; border-bottom: 1px dashed #DEDEDE; border-top:1px solid #ccc ;">商品信息</div>
-				</div>
-				<div class="shop_info">
-					<table cellspacing="0" cellpadding="0" id="table">
-						<tr class="headrow">
-							<td class="img">商品</td>
-							<td>型号</td>
-							<td class="size">尺寸</td>
-							<td class="word">刻字内容</td>
-							<td class="price">市场价格</td>
-							<td class="price">优惠</td>
-							<td class="price">成交价</td>
-						</tr>
-						
-						<!--<tr class="product">
-	                        <td class="img"><img width="120" height="120" src="images/custom/2.jpg" alt=""></td>
-	                        <td><a href="#" target="_blank">爱之光，材质：PT950，镶口：15-20分 DRW124517D</a></td>
-	                        <td class="size">7</td>
-	                        <td class="word">&nbsp;</td>
-	                        <td class="price" style="text-decoration:line-through;">7614.00</td>
-	                        <td class="price">3606.00</td>
-	                        <td class="price">4008.00</td>
-	                        <td class="action"><div><a href="javascript:;" >删除</a><br><a href="javascript:;">修改</a></div></td>
-	                    </tr>-->
-					</table>
-					<div class="mainstat"><!--此订单暂无可用的优惠券。-->
-	                    <div id="isuseprize" class="statleft">
-	                    	<input id="useprize" type="checkbox" name="useprize">&nbsp;使用代金劵</div>
-	                </div>
-					<div class="shop_sum">
-						<div class="shopsumL">
-							共<span class="total" id="count">0</span>件商品
-							
-						</div>
-						<div class="shopsumR">
-	                      	商品总金额 <span id="productmoney">￥0</span> - 优惠金额 <span id="discountmoney">0</span> = 订单总金额 <span id="totalmoney" class="total">0</span>
-	                    </div>
-					</div>
-					<div class="mainbutn"><span class="total" id="daijinjuan" style="display:none;"></span>应付总金额：￥<span id="totalpayment" class="total">8302.00</span>
-	                    <span class="button submit_btn" >提交订单</span>
-	                </div>
-				</div>
-			</div>
+		<div class="cartbody">
+			<div class="cartlogo"></div>
+			<div class="cartstep">
+	            <div class="step3"></div>
+	        </div>
+	        <div class="cartmain">
+	        	<div class="carthead">
+	                <div class="lih1">支付订单</div>
+	            </div>
+	            <div class="cartinfo" style="border-bottom: 1px solid #CCCCCC;padding-bottom:0;">
+	            	<div class="infotext" style="padding-bottom: 0;">
+	            		您的订单号为: <span class="order">A0000</span>
+	            		订单总金额: <span class="money sum_price">￥3501.00</span>
+	            		-代金券 <span class="money yh_price">￥0.00</span>
+	            		=应付总金额为: <span class="money n_price">￥3501.00</span>元<br />
+	            		请您在24小时内完成支付，否则订单会被自动取消。如需帮助，请及时
+	            		<a href="javascript:;" class="consult">咨询客服</a>
+	            		<div class="payonline">
+	            			<span class="span_bank">
+	            				<input name="paymenttype" type="radio"  checked="checked">
+	            				<img src="images/bank/10.gif" alt="">
+	            			</span>
+	            			<span class="payment pay_sum">支付全款 ￥3501.00</span>
+	            			<span class="payment">支付定金 ￥700.00</span>
+	            		</div>
+	            		<div id="orderpay">
+	            			<div class="otherpay">
+	            				<a href="javascript:;" class="changepay">选择其他在线支付方式</a>
+	            			</div>
+	            		</div>
+	            	</div>
+	            </div>
+	        </div>
+	        <div class="repaytype" style="display: none;">
+	        	<div class="carthead">
+                    <div class="lih1">在线支付</div>
+                </div>
+                <div class="cartbank">
+                	<ul class="pay_ul1 clearfix">
+                		<li>
+                			<input name="repaymenttype" type="radio"  value="WEIXIN">
+                			<img src="images/bank/weixin.jpg" alt="" />
+                		</li>
+                		<li>
+                			<input name="repaymenttype" type="radio"  value="cft">
+                			<img src="images/bank/cft.gif" alt="" />
+                		</li>
+                	</ul>
+                	<ul class="pay_ul2 clearfix">
+                		<!--<li>
+                			<input name="repaymenttype" type="radio"  value="ICBC">
+                			<img src="images/bank/10.gif" alt="" />
+                		</li>-->
+                	</ul>
+                	<ul class="clearfix">
+                		<li class="button"><span class="payment" >支付全款 ￥3501.00</span></li>
+                		<li class="button"><span class="payment" >支付定金 ￥700.00</span></li>
+                	</ul>
+                </div>
+	        </div>
 		</div>
-	
-		
-		
-	
-		<!--<div class="prompt_del prompt">
-			<h3>操作提示
-				<a href="#" class="close" style="right: 12px; top: 5px;">×</a>
-			</h3>
-			<div class="prompt_con">确定要删除珍宝箱的商品吗？</div>
-			<div class="prompt_bottom clearfix">
-				<div class="btn_yd">确定</div>
-				<div class="btn_nd">取消</div>
-			</div>
-		</div>-->
-		
 		<!--message-->
 		<div id="message">
 			<div class="messagetop">

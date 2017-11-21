@@ -12,10 +12,30 @@ $(function(){
 	}else{
 		var str=getCookie("product");
 		var arr=JSON.parse(str);
-		console.log(arr.length)
+//		console.log(arr.length)
 		$("#userhomecartnumber").html(arr.length)
 	}
-	
+	//我的订单
+	if(!getCookie("count")){
+		var shopstr=`<a href="/">
+		         <img src="images/user/noshopping.jpg" alt="">
+		         </a>`;
+		$(".con").hide()
+		$(".homeshop").append(shopstr);
+	}else{
+		var shoparr=JSON.parse(getCookie("count"));
+		for (var i=0;i<shoparr.length;i++) {
+			shopstr+=`<tr class="orderitem">
+                            <td><a href="javascript:;" target="_blank">${shoparr[i].count}</a></td>
+                            <td>${shoparr[i].date}</td>
+                            <td>0.00</td>
+                            <td>${shoparr[i].price}</td>
+                            <td>已提交</td>
+                            <td><a href="javascript:;" target="_blank">支付</a></td>
+		              </tr>`;
+		}
+		$(".con").append(shopstr);
+	}
 	
 	
 	
@@ -60,6 +80,9 @@ $(function(){
 			<a href="#"><img src="images/custom/3.jpg" alt="" /></a>
 			<div class="itemname">爱之光</div>
 		</li>*/
+	if(!getCookie("collect")){
+		return ;
+	}
 	var collectarr=JSON.parse(getCookie("collect"));
 	var collectstr="";
 	for (var i=0;i<collectarr.length;i++) {
@@ -68,7 +91,7 @@ $(function(){
 						<div class="itemname">${collectarr[i].name}</div>
 					</li>`
 	}
-	console.log(collectarr)
+//	console.log(collectarr)
 	
 	$(".s_ul").html(collectstr);
 	

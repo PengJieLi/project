@@ -161,6 +161,25 @@
                         padding-right: 10px;
                     }
                 }
+                .con{
+                    border-collapse:collapse;
+                    width: 100%;
+                    border:1px solid #ccc;
+                    .orderhead{
+                        height: 30px;
+                        line-height: 30px;
+                        background: #F7F7F7;
+                        font-size: 14px;
+                    }
+                    .orderitem{
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                    td{
+                        padding: 5px;
+                        text-align: center;
+                    }
+                }
             }
             .favorlook{
                 width: 910px;

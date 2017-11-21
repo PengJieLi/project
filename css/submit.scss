@@ -1,0 +1,160 @@
+//main
+.cartbody{
+    margin: 0 auto;
+    padding: 15px 0 10px 0;
+    width: 1000px;
+    background: #fff;
+    .cartlogo{
+        width: 1000px;
+        height: 110px;
+        background: #fff url(../images/submit/logo.jpg) no-repeat;
+    }
+    .cartstep{
+        width: 1000px;
+        height: 61px;
+        background: #fff;
+        .step3{
+            width: 1000px;
+            height: 30px;
+            background: url(../images/submit/step.jpg) no-repeat 0 -76px;
+        }
+    }
+    .cartmain{
+        width: 1000px;
+        background: #fff;
+        
+        .cartinfo{
+            padding: 2px;
+            width: 994px;
+            border-left:1px solid #ccc ;
+            border-right:1px solid #ccc ;
+            .infotext{
+                padding: 25px 0 35px 0;
+                width: 1000px;
+                line-height: 30px;
+                text-align: center;
+                .order{
+                    color: red;
+                    font-weight: 900;
+                    font-size: 16px;
+                }
+                .money{
+                    color: red;
+                    font-weight: 900;
+                    font-size: 16px;
+                    padding-right: 5px;
+                }
+                .consult{
+                    color: red;
+                }
+                .payonline{
+                    width: 998px;
+                    margin-top: 20px;
+                    padding-top: 40px;
+                    background: #EDEDED;
+                    img{
+                        position: relative;
+                        top: 5px;
+                        padding-right: 5px;
+                        display: inline-block;
+                    }
+                    .span_bank{
+                        text-align: center;
+                        padding: 15px 20px 14px 20px;
+                        border:1px solid #ccc ;
+                        background: #fff;
+                    }
+                    .payment{
+                        margin-left: 2px;
+                        margin-right: 4px;
+                        padding: 10px 30px;
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: #fff;
+                        background: #C11E1F;
+                        cursor: pointer;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+                #orderpay{
+                    padding:42px 0;
+                    background:#EDEDED; 
+                    width:998px;
+                    .otherpay{
+                        background:#FFD8D9;
+                        font-size:14px; 
+                        width:998px; 
+                        height:33px; 
+                        line-height:33px;
+                    }
+                }
+            }
+        }
+    }
+    .carthead{
+        padding-top: 5px;
+        width: 1000px;
+        height: 28px;
+        line-height:28px;
+        border-bottom:1px solid #ccc;
+        border-top:0 ;
+        text-align: center;
+        background: url(../images/submit/headbg.jpg);
+        .lih1{
+            text-align: left;
+            width: 998px;
+            border:1px solid #ccc ;
+            border-bottom:0;
+            text-indent: 19px;
+            font-weight: 900;
+        }
+    }
+    .cartbank{
+        padding: 0 0 8px 23px;
+        width: 975px;
+        border-left:1px solid #ccc ;
+        border-right:1px solid #ccc ;
+        padding-top: 17px;
+        padding-bottom: 11px;
+        border-bottom: 1px solid #ccc;
+        ul{
+            width: 970px;
+            margin-left: 17px;
+            li{
+                float: left;
+                height: 36px;
+                padding-top: 7px;
+                padding-left: 5px;
+                width: 164px;
+                background: #fff;
+                border:1px solid #ccc;
+                margin: 3px 22px 7px 0;
+                input{
+                    position: relative;
+                    top: -5px;
+                }
+                img{
+                    margin-top: 4px;
+                    margin-left: 4px;
+                    display: inline-block;
+                }
+            }
+            .button{
+                padding-top: 18px;
+                width: 270px;
+                border: 0;
+                .payment{
+                    margin-top: 10px;
+                    padding: 10px 32px;
+                    font-size: 20px;
+                    font-weight: 900;
+                    color: #fff;
+                    background: #C11E1F;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}

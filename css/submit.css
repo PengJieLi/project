@@ -1,0 +1,134 @@
+.cartbody {
+  margin: 0 auto;
+  padding: 15px 0 10px 0;
+  width: 1000px;
+  background: #fff; }
+  .cartbody .cartlogo {
+    width: 1000px;
+    height: 110px;
+    background: #fff url(../images/submit/logo.jpg) no-repeat; }
+  .cartbody .cartstep {
+    width: 1000px;
+    height: 61px;
+    background: #fff; }
+    .cartbody .cartstep .step3 {
+      width: 1000px;
+      height: 30px;
+      background: url(../images/submit/step.jpg) no-repeat 0 -76px; }
+  .cartbody .cartmain {
+    width: 1000px;
+    background: #fff; }
+    .cartbody .cartmain .cartinfo {
+      padding: 2px;
+      width: 994px;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc; }
+      .cartbody .cartmain .cartinfo .infotext {
+        padding: 25px 0 35px 0;
+        width: 1000px;
+        line-height: 30px;
+        text-align: center; }
+        .cartbody .cartmain .cartinfo .infotext .order {
+          color: red;
+          font-weight: 900;
+          font-size: 16px; }
+        .cartbody .cartmain .cartinfo .infotext .money {
+          color: red;
+          font-weight: 900;
+          font-size: 16px;
+          padding-right: 5px; }
+        .cartbody .cartmain .cartinfo .infotext .consult {
+          color: red; }
+        .cartbody .cartmain .cartinfo .infotext .payonline {
+          width: 998px;
+          margin-top: 20px;
+          padding-top: 40px;
+          background: #EDEDED; }
+          .cartbody .cartmain .cartinfo .infotext .payonline img {
+            position: relative;
+            top: 5px;
+            padding-right: 5px;
+            display: inline-block; }
+          .cartbody .cartmain .cartinfo .infotext .payonline .span_bank {
+            text-align: center;
+            padding: 15px 20px 14px 20px;
+            border: 1px solid #ccc;
+            background: #fff; }
+          .cartbody .cartmain .cartinfo .infotext .payonline .payment {
+            margin-left: 2px;
+            margin-right: 4px;
+            padding: 10px 30px;
+            font-size: 20px;
+            font-weight: 900;
+            color: #fff;
+            background: #C11E1F;
+            cursor: pointer;
+            position: relative;
+            top: 3px; }
+        .cartbody .cartmain .cartinfo .infotext #orderpay {
+          padding: 42px 0;
+          background: #EDEDED;
+          width: 998px; }
+          .cartbody .cartmain .cartinfo .infotext #orderpay .otherpay {
+            background: #FFD8D9;
+            font-size: 14px;
+            width: 998px;
+            height: 33px;
+            line-height: 33px; }
+  .cartbody .carthead {
+    padding-top: 5px;
+    width: 1000px;
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid #ccc;
+    border-top: 0;
+    text-align: center;
+    background: url(../images/submit/headbg.jpg); }
+    .cartbody .carthead .lih1 {
+      text-align: left;
+      width: 998px;
+      border: 1px solid #ccc;
+      border-bottom: 0;
+      text-indent: 19px;
+      font-weight: 900; }
+  .cartbody .cartbank {
+    padding: 0 0 8px 23px;
+    width: 975px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-top: 17px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #ccc; }
+    .cartbody .cartbank ul {
+      width: 970px;
+      margin-left: 17px; }
+      .cartbody .cartbank ul li {
+        float: left;
+        height: 36px;
+        padding-top: 7px;
+        padding-left: 5px;
+        width: 164px;
+        background: #fff;
+        border: 1px solid #ccc;
+        margin: 3px 22px 7px 0; }
+        .cartbody .cartbank ul li input {
+          position: relative;
+          top: -5px; }
+        .cartbody .cartbank ul li img {
+          margin-top: 4px;
+          margin-left: 4px;
+          display: inline-block; }
+      .cartbody .cartbank ul .button {
+        padding-top: 18px;
+        width: 270px;
+        border: 0; }
+        .cartbody .cartbank ul .button .payment {
+          margin-top: 10px;
+          padding: 10px 32px;
+          font-size: 20px;
+          font-weight: 900;
+          color: #fff;
+          background: #C11E1F;
+          cursor: pointer; }
+
+/*# sourceMappingURL=submit.css.map */
