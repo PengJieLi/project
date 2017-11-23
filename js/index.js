@@ -123,7 +123,7 @@ window.onload=function(){
 	})
 	//返回顶部
 	$("#rightbar a:last").click(function(){
-		$("html,body").scroll(0)
+		$("html,body").scrollTop(0)
 	});
 	
 	$(".keycode").focus(function(){

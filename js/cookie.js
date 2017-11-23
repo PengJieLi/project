@@ -1,3 +1,5 @@
+
+
 //设置cookie
 function setCookie(key,value,day){
 	if( day>0 ){
